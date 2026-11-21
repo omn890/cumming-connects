@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Security policy: run only this site's own scripts. If you edit the small inline script below, update its sha256 here (see README, Security). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-BlURFg5SOmyJ2iJKcYkG561/57DnQC32+NdRpanBz1c='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.tile.openstreetmap.org; font-src 'self'; media-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-src 'none'; worker-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Resources | Cumming Connects</title>
+  <meta name="description" content="Search and filter food pantries, clinics, libraries, parks, senior services, youth programs, and public safety resources in Cumming and Forsyth County, GA.">
+  <meta name="theme-color" content="#121a16">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Resources | Cumming Connects">
+  <meta property="og:description" content="Search and filter food pantries, clinics, libraries, parks, senior services, youth programs, and public safety resources in Cumming and Forsyth County, GA.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cumming Connects">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    /* Apply saved theme + text size before first paint (prevents a flash) */
+    (function () { try {
+      var t = JSON.parse(localStorage.getItem("cc:theme")); if (t) document.documentElement.dataset.theme = t;
+      var s = JSON.parse(localStorage.getItem("cc:textSize")); if (s) document.documentElement.dataset.text = s;
+      if (JSON.parse(localStorage.getItem("cc:cvd"))) document.documentElement.dataset.cvd = "on";
+    } catch (e) {} })();
+    /* Preload the two main fonts when served over the web (browsers refuse font preloads from file://) */
+    if (location.protocol.indexOf("http") === 0) ["atkinson-hyperlegible-latin-400-normal", "overpass-latin-800-normal"].forEach(function (f) {
+      var l = document.createElement("link"); l.rel = "preload"; l.as = "font"; l.type = "font/woff2"; l.crossOrigin = "anonymous";
+      l.href = "assets/fonts/" + f + ".woff2"; document.head.appendChild(l);
+    });
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="alert-strip" role="region" aria-label="Emergency numbers">
+    <div class="container">
+      <span><strong>Emergency?</strong> <span class="lbl-long">Call</span> <a href="tel:911">911</a></span>
+      <span><span class="lbl-long">Crisis support: call or text</span><span class="lbl-short">Crisis</span> <a href="tel:988">988</a></span>
+      <span><span class="lbl-long">Find local help: dial</span><span class="lbl-short">Local help</span> <a href="tel:211">211</a></span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+  <rect width="48" height="48" rx="11" fill="#0b5d3b"/>
+  <rect x="3.5" y="3.5" width="41" height="41" rx="8" fill="none" stroke="#f4f7f4" stroke-width="2.2"/>
+  <path d="M15 35V24a6 6 0 0 1 6-6h9" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M27 12.5l6.5 5.5-6.5 5.5" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="33" cy="33" r="4" fill="#f5c242"/>
+</svg>
+        <span class="brand-name"><span translate="no">Cumming Connects</span><span class="brand-tag">Forsyth County community resources</span></span>
+      </a>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resources.html" aria-current="page">Resources</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="get-involved.html">Get involved</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-extra"><button type="button" class="btn btn--ghost" data-text-toggle data-text-long>Text size: A</button></div>
+      </nav>
+      <div class="header-tools">
+        <button type="button" class="icon-btn listen-btn" data-listen aria-label="Listen to this page" title="Listen to this page">
+          <svg class="listen-icon-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4.7a.7.7 0 0 0-1.2-.5L6.4 7.6a1.4 1.4 0 0 1-1 .4H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.4a1.4 1.4 0 0 1 1 .4l3.4 3.4a.7.7 0 0 0 1.2-.5Z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.4 18.4a9 9 0 0 0 0-12.8"/></svg>
+          <svg class="listen-icon-stop" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          <span class="lbl-wide" data-listen-label>Listen</span>
+        </button>
+        <button type="button" class="icon-btn cvd-btn" data-cvd-toggle aria-pressed="false" aria-label="Colorblind mode" title="Colorblind mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="3.5"/><path d="M17 3.5l4 7h-8z"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><path d="M17 13.5l3.5 3.5-3.5 3.5-3.5-3.5z"/></svg>
+          <span class="lbl-wide">Colorblind</span>
+        </button>
+        <button type="button" class="icon-btn text-size-btn" data-text-toggle aria-label="Text size A"><span class="lbl-wide">Text size </span><span data-lvl>A</span></button>
+        <button type="button" class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Dark mode">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button type="button" class="icon-btn nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="page-hero">
+      <div class="container">
+        <div>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol><li><a href="index.html">Home</a></li><li><span aria-current="page">Resources</span></li></ol>
+        </nav>
+        <h1>Resources</h1>
+        <p>Search 40 places. Star the ones you want to keep.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section section--tight">
+      <div class="container">
+        <div class="directory">
+          <aside class="filters" id="filters" aria-label="Filter resources">
+            <fieldset>
+              <legend>Category</legend>
+              <div class="chips" id="cat-chips"><!-- js --></div>
+            </fieldset>
+            <fieldset>
+              <legend>Who it serves</legend>
+              <div class="chips" id="aud-chips"><!-- js --></div>
+            </fieldset>
+            <button type="button" class="btn btn--ghost btn--sm" id="clear-filters">Clear all filters</button>
+            <button type="button" class="btn btn--primary show-results" id="show-results">Show places</button>
+          </aside>
+
+          <div>
+            <div class="search-field" style="margin-bottom:var(--space-4)">
+              <label for="q" class="visually-hidden">Search resources</label>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <input id="q" type="search" maxlength="80" placeholder="Try food, clinic, library…" autocomplete="off">
+            </div>
+            <div class="results-bar">
+              <p class="results-count" id="results-count" role="status" tabindex="-1">Loading places…</p>
+              <div class="row">
+                <button type="button" class="btn btn--ghost btn--sm filter-toggle" aria-controls="filters" aria-expanded="false">Filters</button>
+                <button type="button" class="chip" id="saved-toggle" aria-pressed="false">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01Z"/></svg>
+                  Saved <span class="badge badge--plain" data-fav-count hidden>0</span>
+                </button>
+                <label for="sort" class="visually-hidden">Sort resources</label>
+                <select id="sort" class="select">
+                  <option value="name">Sort: A to Z</option>
+                  <option value="category">Sort: Category</option>
+                </select>
+                <div class="view-toggle" role="group" aria-label="Layout">
+                  <button type="button" data-view="grid" aria-pressed="true">Cards</button>
+                  <button type="button" data-view="list" aria-pressed="false">List</button>
+                </div>
+              </div>
+            </div>
+            <h2 class="visually-hidden">Results</h2>
+            <div class="grid grid--3 results-grid is-loading" id="results"></div>
+            <div class="empty-state" id="empty" hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3M8 11h6"/></svg>
+              <h2 class="h3" style="font-size:var(--fs-xl)">No matches found</h2>
+              <p id="empty-msg">Try a different word, or clear your filters to see every resource.</p>
+              <div class="row" style="justify-content:center">
+                <button type="button" class="btn btn--primary" id="empty-clear">Clear filters</button>
+                <a class="btn btn--ghost" href="get-involved.html#submit">Suggest a resource</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="modal" id="detail-modal" aria-labelledby="modal-title"></dialog>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-strip">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+  <rect width="48" height="48" rx="11" fill="#0b5d3b"/>
+  <rect x="3.5" y="3.5" width="41" height="41" rx="8" fill="none" stroke="#f4f7f4" stroke-width="2.2"/>
+  <path d="M15 35V24a6 6 0 0 1 6-6h9" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M27 12.5l6.5 5.5-6.5 5.5" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="33" cy="33" r="4" fill="#f5c242"/>
+</svg>
+        <span class="brand-name" translate="no">Cumming Connects</span>
+      </a>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="get-involved.html">Get involved</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="sources.html">Sources</a></li>
+        </ul>
+      </nav>
+      <p class="footer-help"><a href="tel:911">911</a> emergency <span aria-hidden="true">/</span> <a href="tel:988">988</a> crisis <span aria-hidden="true">/</span> <a href="tel:211">211</a> local help</p>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year>2026</span> Cumming Connects, an FBLA Website Design project by students in Forsyth County, Georgia.</p>
+      <p><a href="about.html#accessibility">Accessibility</a></p>
+    </div>
+  </footer>
+  <button type="button" class="icon-btn back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+  <!-- Colorblind mode: the shape key opens and closes whenever you want (Esc or a tap outside also closes it) -->
+  <button type="button" class="key-btn" popovertarget="shape-key" data-key-btn><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="3.5"/><path d="M17 3.5l4 7h-8z"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><path d="M17 13.5l3.5 3.5-3.5 3.5-3.5-3.5z"/></svg>Shape key</button>
+  <div id="shape-key" class="shape-key" popover role="dialog" aria-labelledby="shape-key-title">
+    <div class="shape-key-head">
+      <h2 id="shape-key-title">Shape key</h2>
+      <button type="button" class="icon-btn" popovertarget="shape-key" popovertargetaction="hide" aria-label="Close shape key"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <p>Each category has its own color and shape.</p>
+    <ul class="shape-key-list">
+      <li class="cat-food"><span class="key-shape" aria-hidden="true"></span><span><strong>Food &amp; basic needs</strong><span>Circle</span></span></li>
+      <li class="cat-health"><span class="key-shape" aria-hidden="true"></span><span><strong>Health &amp; wellness</strong><span>Cross</span></span></li>
+      <li class="cat-education"><span class="key-shape" aria-hidden="true"></span><span><strong>Education &amp; libraries</strong><span>Pentagon</span></span></li>
+      <li class="cat-youth"><span class="key-shape" aria-hidden="true"></span><span><strong>Youth &amp; family</strong><span>Triangle</span></span></li>
+      <li class="cat-seniors"><span class="key-shape" aria-hidden="true"></span><span><strong>Seniors</strong><span>Square</span></span></li>
+      <li class="cat-parks"><span class="key-shape" aria-hidden="true"></span><span><strong>Parks &amp; recreation</strong><span>Trapezoid</span></span></li>
+      <li class="cat-civic"><span class="key-shape" aria-hidden="true"></span><span><strong>Civic &amp; volunteering</strong><span>Diamond</span></span></li>
+      <li class="cat-safety"><span class="key-shape" aria-hidden="true"></span><span><strong>Safety &amp; emergency</strong><span>Octagon</span></span></li>
+    </ul>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/resources.js"></script>
+</body>
+</html>

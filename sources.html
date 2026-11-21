@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Security policy: run only this site's own scripts. If you edit the small inline script below, update its sha256 here (see README, Security). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-BlURFg5SOmyJ2iJKcYkG561/57DnQC32+NdRpanBz1c='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.tile.openstreetmap.org; font-src 'self'; media-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-src 'none'; worker-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Sources | Cumming Connects</title>
+  <meta name="description" content="Works cited for every resource, event, image, font, and code library used on Cumming Connects.">
+  <meta name="theme-color" content="#121a16">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Sources | Cumming Connects">
+  <meta property="og:description" content="Works cited for every resource, event, image, font, and code library used on Cumming Connects.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cumming Connects">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    /* Apply saved theme + text size before first paint (prevents a flash) */
+    (function () { try {
+      var t = JSON.parse(localStorage.getItem("cc:theme")); if (t) document.documentElement.dataset.theme = t;
+      var s = JSON.parse(localStorage.getItem("cc:textSize")); if (s) document.documentElement.dataset.text = s;
+      if (JSON.parse(localStorage.getItem("cc:cvd"))) document.documentElement.dataset.cvd = "on";
+    } catch (e) {} })();
+    /* Preload the two main fonts when served over the web (browsers refuse font preloads from file://) */
+    if (location.protocol.indexOf("http") === 0) ["atkinson-hyperlegible-latin-400-normal", "overpass-latin-800-normal"].forEach(function (f) {
+      var l = document.createElement("link"); l.rel = "preload"; l.as = "font"; l.type = "font/woff2"; l.crossOrigin = "anonymous";
+      l.href = "assets/fonts/" + f + ".woff2"; document.head.appendChild(l);
+    });
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="alert-strip" role="region" aria-label="Emergency numbers">
+    <div class="container">
+      <span><strong>Emergency?</strong> <span class="lbl-long">Call</span> <a href="tel:911">911</a></span>
+      <span><span class="lbl-long">Crisis support: call or text</span><span class="lbl-short">Crisis</span> <a href="tel:988">988</a></span>
+      <span><span class="lbl-long">Find local help: dial</span><span class="lbl-short">Local help</span> <a href="tel:211">211</a></span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+  <rect width="48" height="48" rx="11" fill="#0b5d3b"/>
+  <rect x="3.5" y="3.5" width="41" height="41" rx="8" fill="none" stroke="#f4f7f4" stroke-width="2.2"/>
+  <path d="M15 35V24a6 6 0 0 1 6-6h9" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M27 12.5l6.5 5.5-6.5 5.5" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="33" cy="33" r="4" fill="#f5c242"/>
+</svg>
+        <span class="brand-name"><span translate="no">Cumming Connects</span><span class="brand-tag">Forsyth County community resources</span></span>
+      </a>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="get-involved.html">Get involved</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-extra"><button type="button" class="btn btn--ghost" data-text-toggle data-text-long>Text size: A</button></div>
+      </nav>
+      <div class="header-tools">
+        <button type="button" class="icon-btn listen-btn" data-listen aria-label="Listen to this page" title="Listen to this page">
+          <svg class="listen-icon-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4.7a.7.7 0 0 0-1.2-.5L6.4 7.6a1.4 1.4 0 0 1-1 .4H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.4a1.4 1.4 0 0 1 1 .4l3.4 3.4a.7.7 0 0 0 1.2-.5Z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.4 18.4a9 9 0 0 0 0-12.8"/></svg>
+          <svg class="listen-icon-stop" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          <span class="lbl-wide" data-listen-label>Listen</span>
+        </button>
+        <button type="button" class="icon-btn cvd-btn" data-cvd-toggle aria-pressed="false" aria-label="Colorblind mode" title="Colorblind mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="3.5"/><path d="M17 3.5l4 7h-8z"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><path d="M17 13.5l3.5 3.5-3.5 3.5-3.5-3.5z"/></svg>
+          <span class="lbl-wide">Colorblind</span>
+        </button>
+        <button type="button" class="icon-btn text-size-btn" data-text-toggle aria-label="Text size A"><span class="lbl-wide">Text size </span><span data-lvl>A</span></button>
+        <button type="button" class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Dark mode">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button type="button" class="icon-btn nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="page-hero">
+      <div class="container">
+        <div>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol><li><a href="index.html">Home</a></li><li><span aria-current="page">Sources</span></li></ol>
+        </nav>
+        <h1>Sources</h1>
+        <p>Every listing links to the page we checked it against.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section section--tight">
+      <div class="container" style="max-width:960px">
+        <ul class="toc" aria-label="On this page">
+          <li><a href="#cite-resources">Resources</a></li>
+          <li><a href="#cite-events">Events</a></li>
+          <li><a href="#cite-research">Design research</a></li>
+          <li><a href="#cite-assets">Fonts, images, and code</a></li>
+        </ul>
+        <p>Citations follow MLA 9 style. We gathered and checked this information in October 2026. Most listings link to official city, county, library, or nonprofit pages; a few rely on directories, and anything we couldn&rsquo;t fully confirm is labeled on the site. Organization names belong to their owners and appear only to identify them.</p>
+
+        <h2 id="cite-resources" class="mt-6">Community resources</h2>
+        <ol class="cite-list">
+          <li>&ldquo;Avita Community Partners – Cumming Center.&rdquo; <cite>CARF International</cite>, <a href="https://carf.org/provider/cumming-center-29803/">carf.org/provider/cumming-center-29803</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Big Creek Greenway.&rdquo; <cite>TrailLink</cite>, <a href="https://www.traillink.com/gdbkpdf/trail/6407967/big-creek-greenway63921712207622-2026.pdf">www.traillink.com/gdbkpdf/trail/6407967/big-creek-greenway63921712207622-2026.pdf</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Boys &amp; Girls Clubs of Lanier – Forsyth County (Bagwell Club).&rdquo; <cite>Forsyth County News</cite>, <a href="https://forsythnews.com/life/faith-charity/forsyth-countys-first-boys-girls-club-is-now-open-and-taking-registrations">forsythnews.com/life/faith-charity/forsyth-countys-first-boys-girls-club-is-now-open-and-taking-registrations</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Central Park.&rdquo; <cite>Forsyth County Parks and Recreation</cite>, <a href="https://parks.forsythco.com/Portals/3/Park%20Maps/5%20-%20Central%20Park.pdf">parks.forsythco.com/Portals/3/Park%20Maps/5%20-%20Central%20Park.pdf</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;City of Cumming City Hall.&rdquo; <cite>City of Cumming</cite>, <a href="https://www.cityofcumming.net/?p=8667">www.cityofcumming.net/?p=8667</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;City of Cumming Youth Council.&rdquo; <cite>City of Cumming</cite>, <a href="https://cityofcumming.net/?p=8534">cityofcumming.net/?p=8534</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Cumming Aquatic Center.&rdquo; <cite>Explore Georgia</cite>, <a href="https://exploregeorgia.org/cumming/water-sports-recreation/swimming/cumming-aquatic-center">exploregeorgia.org/cumming/water-sports-recreation/swimming/cumming-aquatic-center</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Cumming City Center.&rdquo; <cite>City of Cumming</cite>, <a href="https://cityofcumming.net/?p=9228">cityofcumming.net/?p=9228</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Cumming First United Methodist Church Food Pantry.&rdquo; <cite>WhyHunger</cite>, <a href="https://networks.whyhunger.org/organisation/33185">networks.whyhunger.org/organisation/33185</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Cumming Library (Forsyth County Public Library).&rdquo; <cite>Forsyth County Public Library</cite>, <a href="https://forsythpl.org/administrative-offices">forsythpl.org/administrative-offices</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Cumming Police Department.&rdquo; <cite>Forsyth County News</cite>, <a href="https://www.forsythnews.com/news/public-safety/cumming-police-department-cuts-ribbon-on-new-precinct-at-city-center-honors-fallen-deputies/">www.forsythnews.com/news/public-safety/cumming-police-department-cuts-ribbon-on-new-precinct-at-city-center-honors-fallen-deputies</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Cumming-Forsyth County Chamber of Commerce.&rdquo; <cite>Cumming-Forsyth County Chamber of Commerce</cite>, <a href="https://www.focochamber.org/our-chamber/">www.focochamber.org/our-chamber</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Family Haven (Domestic Violence Shelter).&rdquo; <cite>DomesticShelters.org</cite>, <a href="https://www.domesticshelters.org/help/ga/cumming/30028/family-haven">www.domesticshelters.org/help/ga/cumming/30028/family-haven</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Forsyth County 4-H (UGA Extension).&rdquo; <cite>University of Georgia Cooperative Extension</cite>, <a href="https://extension.uga.edu/county-offices/forsyth/contact-us.html">extension.uga.edu/county-offices/forsyth/contact-us.html</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Forsyth County 911 Communications Center.&rdquo; <cite>Forsyth County Sheriff&rsquo;s Office</cite>, <a href="https://www.forsythsheriff.org/resources/contact-us/">www.forsythsheriff.org/resources/contact-us</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Forsyth County Administration – Freedom Park Campus.&rdquo; <cite>Forsyth County, Georgia</cite>, <a href="https://www.forsythco.com/News/forsyth-county-administration-offices-have-moved-what-to-know">www.forsythco.com/News/forsyth-county-administration-offices-have-moved-what-to-know</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Forsyth County Family YMCA.&rdquo; <cite>YMCA of Metro Atlanta</cite>, <a href="https://ymcaatlanta.org/locations/forsyth-county-family-ymca">ymcaatlanta.org/locations/forsyth-county-family-ymca</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Forsyth County Fire Department.&rdquo; <cite>Forsyth County, Georgia</cite>, <a href="https://www.forsythco.com/Departments-Offices/Fire-Department/Locations">www.forsythco.com/Departments-Offices/Fire-Department/Locations</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Forsyth County Health Department.&rdquo; <cite>Forsyth County, Georgia</cite>, <a href="https://forsythco.com/DepartmentsOffices/HealthDepartment">forsythco.com/DepartmentsOffices/HealthDepartment</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Forsyth County Schools.&rdquo; <cite>Cumming-Forsyth County Chamber of Commerce</cite>, <a href="https://web.focochamber.org/Elementary-Secondary-Schools/Forsyth-County-Schools-578">web.focochamber.org/Elementary-Secondary-Schools/Forsyth-County-Schools-578</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Forsyth County Sheriff&rsquo;s Office.&rdquo; <cite>Forsyth County Sheriff&rsquo;s Office</cite>, <a href="https://www.forsythsheriff.org/resources/contact-us/">www.forsythsheriff.org/resources/contact-us</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Forsyth County Voter Registrations &amp; Elections.&rdquo; <cite>Forsyth County, Georgia</cite>, <a href="https://www.forsythco.com/Departments-Offices/Voter-Registrations-Elections">www.forsythco.com/Departments-Offices/Voter-Registrations-Elections</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Fowler Park.&rdquo; <cite>Forsyth County Parks and Recreation</cite>, <a href="https://parks.forsythco.com/Portals/3/Park%20Maps/9%20-%20Fowler%20Park%20Map.pdf">parks.forsythco.com/Portals/3/Park%20Maps/9%20-%20Fowler%20Park%20Map.pdf</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Georgia DFCS – Forsyth County Office (SNAP &amp; Medicaid).&rdquo; <cite>Georgia Division of Family and Children Services</cite>, <a href="https://dfcs.georgia.gov/node/15746">dfcs.georgia.gov/node/15746</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Georgia Highlands Medical Services – Cumming Family Health Center.&rdquo; <cite>Centers for Disease Control and Prevention</cite>, <a href="https://npin.cdc.gov/organization/georgia-highlands-medical-services-incorporated-0">npin.cdc.gov/organization/georgia-highlands-medical-services-incorporated-0</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Hampton Park Library.&rdquo; <cite>Forsyth County Public Library</cite>, <a href="https://www.forsythpl.org/hampton-park-library">www.forsythpl.org/hampton-park-library</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Hearthstone Lodge Community Center.&rdquo; <cite>Forsyth County, Georgia</cite>, <a href="https://www.forsythco.com/Seniors">www.forsythco.com/Seniors</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Lanier Technical College – Forsyth Campus.&rdquo; <cite>Lanier Technical College Catalog</cite>, <a href="https://laniertech.smartcatalogiq.com/en/2025-2026/catalog/campus-facilities/campuses-and-sites">laniertech.smartcatalogiq.com/en/2025-2026/catalog/campus-facilities/campuses-and-sites</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Mary Alice Park (Lake Lanier).&rdquo; <cite>LakeLanier.com</cite>, <a href="https://lakelanier.com/content/directory/parks/mary-alice-park/">lakelanier.com/content/directory/parks/mary-alice-park</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Meals by Grace Food Pantry.&rdquo; <cite>Forsyth County Schools</cite>, <a href="https://sawneeelementary.forsyth.k12.ga.us/student-services/counseling/community-resources">sawneeelementary.forsyth.k12.ga.us/student-services/counseling/community-resources</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Meals on Wheels (Forsyth County Senior Services).&rdquo; <cite>Forsyth County, Georgia</cite>, <a href="https://forsythco.com/DepartmentsOffices/SeniorServices/Services">forsythco.com/DepartmentsOffices/SeniorServices/Services</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Northside Hospital Forsyth.&rdquo; <cite>American Hospital Directory</cite>, <a href="https://www.ahd.com/free_profile/110005/Northside_Hospital_-_Forsyth/Cumming/Georgia">www.ahd.com/free_profile/110005/Northside_Hospital_-_Forsyth/Cumming/Georgia</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Post Road Library.&rdquo; <cite>Forsyth County Public Library</cite>, <a href="https://www.forsythpl.org/post-road-library">www.forsythpl.org/post-road-library</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Sawnee Mountain Preserve.&rdquo; <cite>Forsyth County Parks and Recreation</cite>, <a href="https://parks.forsythco.com/Portals/3/Park%20Maps/24%20-%20Sawnee%20Mountain%20Preserve.pdf">parks.forsythco.com/Portals/3/Park%20Maps/24%20-%20Sawnee%20Mountain%20Preserve.pdf</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Sexton Hall Enrichment Center.&rdquo; <cite>Forsyth County, Georgia</cite>, <a href="https://www.forsythco.com/News/forsyth-county-senior-services-expanding-respite-and-congregate-programs-to-sexton-hall-enrichment-center2">www.forsythco.com/News/forsyth-county-senior-services-expanding-respite-and-congregate-programs-to-sexton-hall-enrichment-center2</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Sharon Forks Library.&rdquo; <cite>Forsyth County Public Library</cite>, <a href="https://forsythpl.org/sharon-forks-library">forsythpl.org/sharon-forks-library</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;The Center at Charles Place (Forsyth County Senior Services).&rdquo; <cite>Forsyth County, Georgia</cite>, <a href="https://forsythco.com/DepartmentsOffices/SeniorServices/Services">forsythco.com/DepartmentsOffices/SeniorServices/Services</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;The Place of Forsyth County.&rdquo; <cite>AmpleHarvest.org</cite>, <a href="https://ampleharvest.org/food-pantries/the-place-of-forsyth-food-pantry-427/">ampleharvest.org/food-pantries/the-place-of-forsyth-food-pantry-427</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;United Way of Forsyth County.&rdquo; <cite>United Way</cite>, <a href="https://www.unitedway.org/local/united-states/georgia/united-way-of-forsyth-county-inc">www.unitedway.org/local/united-states/georgia/united-way-of-forsyth-county-inc</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;University of North Georgia – Cumming Campus.&rdquo; <cite>University of North Georgia</cite>, <a href="https://ung.edu/campuses/cumming/index.php">ung.edu/campuses/cumming/index.php</a>. Accessed 22 Oct. 2026.</li>
+        </ol>
+
+        <h2 id="cite-events" class="mt-6">Community events</h2>
+        <ol class="cite-list">
+          <li>&ldquo;Slide Into Sundays at City Center.&rdquo; <cite>City of Cumming</cite>, <a href="https://www.cityofcumming.net/events/list">www.cityofcumming.net/events/list</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Georgia General Election Day.&rdquo; <cite>Georgia.gov</cite>, <a href="https://georgia.gov/georgia-election-guide">georgia.gov/georgia-election-guide</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;American Red Cross Blood Drive.&rdquo; <cite>Forsyth County Public Library</cite>, <a href="https://www.forsythpl.org/event/15045234?source=ev">www.forsythpl.org/event/15045234?source=ev</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;City of Cumming Veterans Day Ceremony.&rdquo; <cite>Forsyth County News</cite>, <a href="https://www.forsythnews.com/life/events/look-cumming-celebrates-veterans-day-with-annual-tribute-at-cumming-city-center/">www.forsythnews.com/life/events/look-cumming-celebrates-veterans-day-with-annual-tribute-at-cumming-city-center</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Cumming Steam, Antique Tractor &amp; Gas Engine Exposition.&rdquo; <cite>Cumming Fairgrounds</cite>, <a href="https://www.cummingfair.net/events-calendar">www.cummingfair.net/events-calendar</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Cumming City Council Regular Meeting.&rdquo; <cite>City of Cumming</cite>, <a href="https://www.cityofcumming.net/meetings">www.cityofcumming.net/meetings</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Nights of Lights at the Cumming Fairgrounds.&rdquo; <cite>Cumming Fairgrounds</cite>, <a href="https://www.cummingfair.net/events-calendar">www.cummingfair.net/events-calendar</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;City Center Winter Holiday Market.&rdquo; <cite>City of Cumming</cite>, <a href="https://www.cityofcumming.net/event/city-center-winter-holiday-market">www.cityofcumming.net/event/city-center-winter-holiday-market</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;City Center Christmas Tree Lighting.&rdquo; <cite>City of Cumming</cite>, <a href="https://www.cityofcumming.net/event/city-center-christmas-tree-lighting-2">www.cityofcumming.net/event/city-center-christmas-tree-lighting-2</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Georgia General Election Runoff (if needed).&rdquo; <cite>Georgia.gov</cite>, <a href="https://georgia.gov/georgia-election-guide">georgia.gov/georgia-election-guide</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;City of Cumming Christmas Parade.&rdquo; <cite>Cumming Fairgrounds</cite>, <a href="https://www.cummingfair.net/events-calendar">www.cummingfair.net/events-calendar</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Cumming Farmers Market – Winter Season.&rdquo; <cite>Discover Forsyth County</cite>, <a href="https://discoverfoco.com/event/cumming-farmers-market-winter">discoverfoco.com/event/cumming-farmers-market-winter</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Hop into Easter at Cumming City Center.&rdquo; <cite>Explore Georgia</cite>, <a href="https://exploregeorgia.org/cumming/events/entertainment/hop-into-easter-at-cumming-city-center">exploregeorgia.org/cumming/events/entertainment/hop-into-easter-at-cumming-city-center</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;City Center Spring Festival &amp; Market.&rdquo; <cite>City of Cumming</cite>, <a href="https://www.cityofcumming.net/event/city-center-spring-market">www.cityofcumming.net/event/city-center-spring-market</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Aging Well Expo.&rdquo; <cite>Forsyth County, Georgia</cite>, <a href="https://www.forsythco.com/News/senior-services-hosting-22nd-annual-aging-well-expo-on-april-23">www.forsythco.com/News/senior-services-hosting-22nd-annual-aging-well-expo-on-april-23</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;City of Cumming Memorial Day Ceremony.&rdquo; <cite>Forsyth County News</cite>, <a href="https://www.forsythnews.com/life/events/250-years-of-sacrifice-cumming-honors-fallen-soldiers-at-annual-memorial-day-ceremony/">www.forsythnews.com/life/events/250-years-of-sacrifice-cumming-honors-fallen-soldiers-at-annual-memorial-day-ceremony</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Forsyth County Public Library Summer Reading Kickoff.&rdquo; <cite>Forsyth County Public Library</cite>, <a href="https://www.forsythpl.org">www.forsythpl.org</a>. Accessed 22 Oct. 2026.</li>
+        </ol>
+
+        <h2 id="cite-research" class="mt-6">Design and accessibility research</h2>
+        <ol class="cite-list">
+          <li>&ldquo;Web Content Accessibility Guidelines (WCAG) 2.2.&rdquo; <cite>World Wide Web Consortium</cite>, <a href="https://www.w3.org/TR/WCAG22/">www.w3.org/TR/WCAG22</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;10 Usability Heuristics for User Interface Design.&rdquo; <cite>Nielsen Norman Group</cite>, <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">www.nngroup.com/articles/ten-usability-heuristics</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Web Vitals.&rdquo; <cite>web.dev, Google</cite>, <a href="https://web.dev/articles/vitals">web.dev/articles/vitals</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Disability Impacts All of Us.&rdquo; <cite>Centers for Disease Control and Prevention</cite>, <a href="https://www.cdc.gov/disability-and-health/articles-documents/disability-impacts-all-of-us-infographic.html">www.cdc.gov/disability-and-health/articles-documents/disability-impacts-all-of-us-infographic.html</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Atkinson Hyperlegible Font.&rdquo; <cite>Braille Institute of America</cite>, <a href="https://www.brailleinstitute.org/freefont/">www.brailleinstitute.org/freefont</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;QuickFacts: Forsyth County, Georgia.&rdquo; <cite>U.S. Census Bureau</cite>, <a href="https://www.census.gov/quickfacts/forsythcountygeorgia">www.census.gov/quickfacts/forsythcountygeorgia</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;Understanding Success Criterion 2.5.8: Target Size (Minimum).&rdquo; <cite>World Wide Web Consortium</cite>, <a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html">www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html</a>. Accessed 22 Oct. 2026.</li>
+          <li>&ldquo;About Events.&rdquo; <cite>Google Analytics Help</cite>, <a href="https://support.google.com/analytics/answer/9322688">support.google.com/analytics/answer/9322688</a>. Accessed 22 Oct. 2026.</li>
+        </ol>
+
+        <h2 id="cite-assets" class="mt-6">Fonts, images, and code</h2>
+        <ul class="cite-list">
+          <li><strong>Atkinson Hyperlegible</strong> (body font) by the Braille Institute, used under the SIL Open Font License 1.1. Self-hosted from the Fontsource package.</li>
+          <li><strong>Overpass</strong> (heading font), an open-source interpretation of the U.S. Highway Gothic sign lettering, by Delve Withrington and contributors, used under the SIL Open Font License 1.1. Self-hosted from the Fontsource package.</li>
+          <li><strong>Leaflet 1.9.4</strong> (interactive map library), &copy; Vladimir Agafonkin and contributors, used under the BSD 2-Clause License. <a href="https://leafletjs.com">leafletjs.com</a>.</li>
+          <li><strong>Map tiles and data</strong> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, available under the Open Database License.</li>
+          <li><strong>Icons</strong> are adapted from the open-source <a href="https://lucide.dev">Lucide</a> icon set (ISC License).</li>
+          <li><strong>Illustrations, logo, and demo video</strong> were made for this project. The demo video is a screen recording of this website.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-strip">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+  <rect width="48" height="48" rx="11" fill="#0b5d3b"/>
+  <rect x="3.5" y="3.5" width="41" height="41" rx="8" fill="none" stroke="#f4f7f4" stroke-width="2.2"/>
+  <path d="M15 35V24a6 6 0 0 1 6-6h9" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M27 12.5l6.5 5.5-6.5 5.5" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="33" cy="33" r="4" fill="#f5c242"/>
+</svg>
+        <span class="brand-name" translate="no">Cumming Connects</span>
+      </a>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="get-involved.html">Get involved</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="sources.html">Sources</a></li>
+        </ul>
+      </nav>
+      <p class="footer-help"><a href="tel:911">911</a> emergency <span aria-hidden="true">/</span> <a href="tel:988">988</a> crisis <span aria-hidden="true">/</span> <a href="tel:211">211</a> local help</p>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year>2026</span> Cumming Connects, an FBLA Website Design project by students in Forsyth County, Georgia.</p>
+      <p><a href="about.html#accessibility">Accessibility</a></p>
+    </div>
+  </footer>
+  <button type="button" class="icon-btn back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+  <!-- Colorblind mode: the shape key opens and closes whenever you want (Esc or a tap outside also closes it) -->
+  <button type="button" class="key-btn" popovertarget="shape-key" data-key-btn><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="3.5"/><path d="M17 3.5l4 7h-8z"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><path d="M17 13.5l3.5 3.5-3.5 3.5-3.5-3.5z"/></svg>Shape key</button>
+  <div id="shape-key" class="shape-key" popover role="dialog" aria-labelledby="shape-key-title">
+    <div class="shape-key-head">
+      <h2 id="shape-key-title">Shape key</h2>
+      <button type="button" class="icon-btn" popovertarget="shape-key" popovertargetaction="hide" aria-label="Close shape key"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <p>Each category has its own color and shape.</p>
+    <ul class="shape-key-list">
+      <li class="cat-food"><span class="key-shape" aria-hidden="true"></span><span><strong>Food &amp; basic needs</strong><span>Circle</span></span></li>
+      <li class="cat-health"><span class="key-shape" aria-hidden="true"></span><span><strong>Health &amp; wellness</strong><span>Cross</span></span></li>
+      <li class="cat-education"><span class="key-shape" aria-hidden="true"></span><span><strong>Education &amp; libraries</strong><span>Pentagon</span></span></li>
+      <li class="cat-youth"><span class="key-shape" aria-hidden="true"></span><span><strong>Youth &amp; family</strong><span>Triangle</span></span></li>
+      <li class="cat-seniors"><span class="key-shape" aria-hidden="true"></span><span><strong>Seniors</strong><span>Square</span></span></li>
+      <li class="cat-parks"><span class="key-shape" aria-hidden="true"></span><span><strong>Parks &amp; recreation</strong><span>Trapezoid</span></span></li>
+      <li class="cat-civic"><span class="key-shape" aria-hidden="true"></span><span><strong>Civic &amp; volunteering</strong><span>Diamond</span></span></li>
+      <li class="cat-safety"><span class="key-shape" aria-hidden="true"></span><span><strong>Safety &amp; emergency</strong><span>Octagon</span></span></li>
+    </ul>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/analytics.js"></script>
+</body>
+</html>

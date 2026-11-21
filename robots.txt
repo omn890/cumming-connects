@@ -1,0 +1,6 @@
+# Cumming Connects
+User-agent: *
+Allow: /
+
+# After publishing, replace YOUR-SITE-ADDRESS with the real address (for example, a GitHub Pages URL).
+Sitemap: https://YOUR-SITE-ADDRESS/sitemap.xml

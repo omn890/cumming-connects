@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Security policy: run only this site's own scripts. If you edit the small inline script below, update its sha256 here (see README, Security). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-BlURFg5SOmyJ2iJKcYkG561/57DnQC32+NdRpanBz1c='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.tile.openstreetmap.org; font-src 'self'; media-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-src 'none'; worker-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Cumming Connects: Community Resources in Cumming and Forsyth County, GA</title>
+  <meta name="description" content="Food help, health care, libraries, parks, senior services, and local events in Cumming and Forsyth County, Georgia. Free, no sign-up, and every listing links to the page we checked it against.">
+  <meta name="theme-color" content="#121a16">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Cumming Connects: Community Resources in Cumming and Forsyth County, GA">
+  <meta property="og:description" content="Food help, health care, libraries, parks, senior services, and local events in Cumming and Forsyth County, Georgia. Free, no sign-up, and every listing links to the page we checked it against.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cumming Connects">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Cumming Connects","description":"A free guide to community resources and events in Cumming and Forsyth County, Georgia.","inLanguage":"en-US","about":{"@type":"City","name":"Cumming","containedInPlace":{"@type":"AdministrativeArea","name":"Forsyth County, Georgia"}}}</script>
+  <script>
+    /* Apply saved theme + text size before first paint (prevents a flash) */
+    (function () { try {
+      var t = JSON.parse(localStorage.getItem("cc:theme")); if (t) document.documentElement.dataset.theme = t;
+      var s = JSON.parse(localStorage.getItem("cc:textSize")); if (s) document.documentElement.dataset.text = s;
+      if (JSON.parse(localStorage.getItem("cc:cvd"))) document.documentElement.dataset.cvd = "on";
+    } catch (e) {} })();
+    /* Preload the two main fonts when served over the web (browsers refuse font preloads from file://) */
+    if (location.protocol.indexOf("http") === 0) ["atkinson-hyperlegible-latin-400-normal", "overpass-latin-800-normal"].forEach(function (f) {
+      var l = document.createElement("link"); l.rel = "preload"; l.as = "font"; l.type = "font/woff2"; l.crossOrigin = "anonymous";
+      l.href = "assets/fonts/" + f + ".woff2"; document.head.appendChild(l);
+    });
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="alert-strip" role="region" aria-label="Emergency numbers">
+    <div class="container">
+      <span><strong>Emergency?</strong> <span class="lbl-long">Call</span> <a href="tel:911">911</a></span>
+      <span><span class="lbl-long">Crisis support: call or text</span><span class="lbl-short">Crisis</span> <a href="tel:988">988</a></span>
+      <span><span class="lbl-long">Find local help: dial</span><span class="lbl-short">Local help</span> <a href="tel:211">211</a></span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+  <rect width="48" height="48" rx="11" fill="#0b5d3b"/>
+  <rect x="3.5" y="3.5" width="41" height="41" rx="8" fill="none" stroke="#f4f7f4" stroke-width="2.2"/>
+  <path d="M15 35V24a6 6 0 0 1 6-6h9" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M27 12.5l6.5 5.5-6.5 5.5" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="33" cy="33" r="4" fill="#f5c242"/>
+</svg>
+        <span class="brand-name"><span translate="no">Cumming Connects</span><span class="brand-tag">Forsyth County community resources</span></span>
+      </a>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="get-involved.html">Get involved</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-extra"><button type="button" class="btn btn--ghost" data-text-toggle data-text-long>Text size: A</button></div>
+      </nav>
+      <div class="header-tools">
+        <button type="button" class="icon-btn listen-btn" data-listen aria-label="Listen to this page" title="Listen to this page">
+          <svg class="listen-icon-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4.7a.7.7 0 0 0-1.2-.5L6.4 7.6a1.4 1.4 0 0 1-1 .4H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.4a1.4 1.4 0 0 1 1 .4l3.4 3.4a.7.7 0 0 0 1.2-.5Z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.4 18.4a9 9 0 0 0 0-12.8"/></svg>
+          <svg class="listen-icon-stop" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          <span class="lbl-wide" data-listen-label>Listen</span>
+        </button>
+        <button type="button" class="icon-btn cvd-btn" data-cvd-toggle aria-pressed="false" aria-label="Colorblind mode" title="Colorblind mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="3.5"/><path d="M17 3.5l4 7h-8z"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><path d="M17 13.5l3.5 3.5-3.5 3.5-3.5-3.5z"/></svg>
+          <span class="lbl-wide">Colorblind</span>
+        </button>
+        <button type="button" class="icon-btn text-size-btn" data-text-toggle aria-label="Text size A"><span class="lbl-wide">Text size </span><span data-lvl>A</span></button>
+        <button type="button" class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Dark mode">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button type="button" class="icon-btn nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="sign-hero is-loading" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title" class="visually-hidden">Cumming Connects: find help and things to do in Cumming, Georgia</h1>
+
+        <div class="sign-assembly">
+          <div class="sign-posts" aria-hidden="true"></div>
+          <div class="sign">
+            <span class="sign-route" aria-hidden="true" translate="no">Cumming</span>
+            <form class="sign-form" id="sign-form" action="resources.html" method="get">
+              <p class="sign-line">
+                <label for="sign-need">I need</label>
+                <span class="sign-select">
+                  <select id="sign-need" name="cat">
+                    <option value="food">food help</option>
+                    <option value="health">a doctor or clinic</option>
+                    <option value="education">a library or school</option>
+                    <option value="youth">something for kids</option>
+                    <option value="seniors">senior support</option>
+                    <option value="parks">a park or trail</option>
+                    <option value="civic">local government</option>
+                    <option value="safety">crisis or safety help</option>
+                  </select>
+                </span>
+                <label for="sign-who"><span class="visually-hidden" data-no-read>Who it&rsquo;s </span>for</label>
+                <span class="sign-select">
+                  <select id="sign-who" name="aud">
+                    <option value="">anyone</option>
+                    <option value="families">my family</option>
+                    <option value="youth">a teen</option>
+                    <option value="seniors">an older adult</option>
+                    <option value="newcomers">a newcomer</option>
+                    <option value="spanish">a Spanish speaker</option>
+                  </select>
+                </span>
+              </p>
+              <div class="sign-foot">
+                <p class="sign-results" id="sign-results" aria-live="polite">Pick what you need.</p>
+                <button class="sign-go" type="submit" id="sign-go">
+                  <span id="sign-go-label">Show places</span>
+                  <svg viewBox="10 8 28 30" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 35V24a6 6 0 0 1 6-6h9"/><path d="M27 12.5l6.5 5.5-6.5 5.5"/></svg>
+                </button>
+              </div>
+            </form>
+          </div>
+          <ul class="exits" id="sign-exits" aria-label="Top matches"></ul>
+        </div>
+      </div>
+      <svg class="horizon" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path d="M0 130 L0 104 C180 98 320 86 470 76 C620 66 760 52 900 40 C960 35 1000 30 1032 27 L1092 27 C1120 28 1150 34 1200 44 C1290 60 1370 74 1440 82 L1440 130 Z" fill="#5f8a71"/>
+        <path d="M1032 27 L1092 27 L1086 34 L1040 35 Z" fill="#c9d1cb"/>
+        <path d="M0 130 L0 100 L6 90 L13 100 L18 88 L24 100 L32 92 L41 100 L46 93 L52 100 L57 88 L62 100 L71 90 L80 100 L91 94 L102 100 L108 86 L115 100 L124 89 L133 100 L140 92 L147 100 L152 90 L158 100 L164 94 L171 100 L181 90 L191 100 L202 90 L213 100 L220 92 L226 100 L233 90 L240 100 L250 89 L260 100 L266 85 L271 100 L278 84 L286 100 L294 86 L302 100 L308 92 L315 100 L322 87 L328 100 L335 93 L342 100 L351 90 L360 100 L365 90 L370 100 L380 90 L389 100 L400 86 L411 100 L418 88 L424 100 L432 85 L440 100 L447 88 L454 100 L462 92 L471 100 L478 90 L484 100 L491 94 L498 100 L504 94 L509 100 L518 84 L526 100 L533 86 L540 100 L549 84 L558 100 L566 89 L575 100 L581 84 L587 100 L594 93 L600 100 L608 91 L616 100 L626 84 L636 100 L644 90 L653 100 L659 89 L665 100 L673 85 L681 100 L688 84 L696 100 L705 91 L714 100 L722 93 L729 100 L734 91 L739 100 L746 85 L753 100 L762 91 L772 100 L778 89 L783 100 L789 90 L795 100 L804 94 L812 100 L817 89 L822 100 L832 93 L843 100 L850 84 L857 100 L864 94 L872 100 L880 90 L887 100 L894 92 L902 100 L913 84 L924 100 L932 85 L940 100 L950 93 L960 100 L967 85 L974 100 L980 87 L987 100 L994 92 L1001 100 L1008 88 L1015 100 L1024 92 L1034 100 L1042 85 L1049 100 L1054 89 L1059 100 L1064 87 L1069 100 L1075 89 L1081 100 L1092 89 L1103 100 L1110 85 L1117 100 L1122 87 L1128 100 L1134 88 L1141 100 L1148 93 L1154 100 L1159 94 L1164 100 L1169 92 L1174 100 L1184 84 L1193 100 L1199 85 L1205 100 L1210 86 L1215 100 L1224 85 L1232 100 L1238 89 L1245 100 L1250 93 L1255 100 L1264 90 L1273 100 L1284 88 L1295 100 L1305 91 L1315 100 L1324 91 L1332 100 L1338 87 L1345 100 L1353 87 L1361 100 L1366 91 L1371 100 L1379 87 L1387 100 L1394 84 L1400 100 L1408 91 L1416 100 L1424 91 L1433 100 L1438 94 L1443 100 L1440 130 Z" fill="#073a25"/>
+      </svg>
+    </section>
+
+    <div class="checked-band">
+      <div class="container"><p class="checked-line" id="checked-line"><strong>Checked October 22, 2026</strong> <span>against 57 pages, including <a href="sources.html#cite-resources">Forsyth County (12)</a>, <a href="sources.html#cite-resources">City of Cumming (8)</a>, <a href="sources.html#cite-resources">Forsyth County Public Library (6)</a>, and <a href="sources.html#cite-events">Cumming Fairgrounds (3)</a>.</span> <a href="sources.html">See every source</a></p></div>
+    </div>
+
+    <section class="section section--video" aria-labelledby="video-title">
+      <div class="container video-layout">
+        <div class="video-frame">
+          <video id="demo-video" controls muted playsinline preload="none" data-poster="assets/video/demo-poster.jpg" aria-describedby="video-desc">
+            <source src="assets/video/demo.mp4" type="video/mp4">
+            <source src="assets/video/demo.webm" type="video/webm">
+          </video>
+        </div>
+        <div>
+          <h2 id="video-title">See it work</h2>
+          <p id="video-desc" class="text-soft">A short screen recording of this site, with captions.</p>
+          <ul class="video-steps" aria-label="Jump to a part of the video">
+            <li><button type="button" class="chapter" data-t="4.5" aria-label="Play from 0:05: pick a need on the sign">0:05</button><span>Pick a need on the sign.</span></li>
+            <li><button type="button" class="chapter" data-t="8.8" aria-label="Play from 0:09: open a place">0:09</button><span>Open a place to see its phone, hours, and address.</span></li>
+            <li><button type="button" class="chapter" data-t="18.8" aria-label="Play from 0:19: save it">0:19</button><span>Star it so it&rsquo;s there next time.</span></li>
+            <li><button type="button" class="chapter" data-t="35.2" aria-label="Play from 0:35: get directions">0:35</button><span>Get directions in one tap.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--board" aria-labelledby="board-title">
+      <div class="container">
+        <h2 id="board-title" class="h-section">Browse by need</h2>
+        <nav class="board" id="category-board" aria-label="Resource categories"></nav>
+        <p class="after-link"><a href="resources.html">All 40 places in one list</a></p>
+      </div>
+    </section>
+
+    <section class="section section--ruled" aria-labelledby="events-title">
+      <div class="container">
+        <h2 id="events-title" class="h-section">Coming up</h2>
+        <ul class="agenda" id="upcoming-events"></ul>
+        <p class="after-link"><a href="events.html">Full calendar, by month</a></p>
+      </div>
+    </section>
+
+    <section class="section section--ruled" aria-labelledby="places-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 id="places-title">Places worth knowing</h2>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" class="icon-btn" data-carousel="prev" aria-label="Previous places" aria-controls="places-track">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <button type="button" class="icon-btn" data-carousel="next" aria-label="Next places" aria-controls="places-track">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+        <ul class="carousel-track" id="places-track" tabindex="0" aria-label="Places worth knowing, scrollable list">
+          <li class="place">
+            <div class="place-art"><img src="assets/img/places/sawnee-mountain.svg" alt="Two hikers climb a switchback trail up forested Sawnee Mountain toward the granite Indian Seats overlook as morning mist lifts from the valley" width="800" height="560" loading="lazy"></div>
+            <div class="place-body"><h3>Sawnee Mountain Preserve</h3><p>Trails to the Indian Seats overlook, with the best view in the county.</p><a class="place-link" href="resources.html#sawnee-mountain-preserve">Hours and directions</a></div>
+          </li>
+          <li class="place">
+            <div class="place-art"><img src="assets/img/places/lake-lanier.svg" alt="Families on the sandy swim beach at Mary Alice Park wave from the water and shore, with a pontoon boat at a dock and pines across Lake Lanier" width="800" height="560" loading="lazy"></div>
+            <div class="place-body"><h3>Mary Alice Park</h3><p>The city&rsquo;s swim beach and boat launch on Lake Lanier.</p><a class="place-link" href="resources.html#mary-alice-park">Hours and directions</a></div>
+          </li>
+          <li class="place">
+            <div class="place-art"><img src="assets/img/places/city-center.svg" alt="At dusk, families on picnic blankets watch musicians under the lit amphitheater and string lights at Cumming City Center" width="800" height="560" loading="lazy"></div>
+            <div class="place-body"><h3>Cumming City Center</h3><p>Markets, concerts, and a playground, with free parking in the deck.</p><a class="place-link" href="events.html">See City Center events</a></div>
+          </li>
+          <li class="place">
+            <div class="place-art"><img src="assets/img/places/library.svg" alt="A parent and child walk toward a brick and glass library with full bookshelves, a book drop, and a bike rack" width="800" height="560" loading="lazy"></div>
+            <div class="place-body"><h3>Cumming Library</h3><p>Free books, computers, Wi-Fi, and programs for every age.</p><a class="place-link" href="resources.html#cumming-library">Hours and directions</a></div>
+          </li>
+          <li class="place">
+            <div class="place-art"><img src="assets/img/places/fairgrounds.svg" alt="A vintage steam tractor puffs smoke under bunting at the Cumming Fairgrounds, with a Ferris wheel behind" width="800" height="560" loading="lazy"></div>
+            <div class="place-body"><h3>Cumming Fairgrounds</h3><p>Home of the Steam Expo, Nights of Lights, and the Christmas Parade.</p><a class="place-link" href="events.html">See fairgrounds events</a></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="voices" aria-labelledby="voices-title" hidden>
+      <div class="container">
+        <h2 id="voices-title">What neighbors say</h2>
+        <div class="quotes" id="quotes"></div>
+      </div>
+    </section>
+
+    <section class="section section--story" aria-labelledby="story-title">
+      <div class="container story">
+        <div class="team-photo">
+          <img src="assets/img/places/food-pantry.svg" alt="Volunteers hand a grocery bag to a neighbor across a table of produce and canned goods, with daylight from a tall window falling across the floor" width="800" height="560" loading="lazy">
+        </div>
+        <div>
+          <h2 id="story-title">Why we built this</h2>
+          <blockquote>
+            <p>We kept hearing the same thing from friends and neighbors: the help is out there, but it&rsquo;s spread across dozens of websites.</p>
+          </blockquote>
+          <cite>The Cumming Connects team, FBLA students in Forsyth County</cite>
+          <div class="row mt-5">
+            <a class="btn btn--primary" href="about.html">How we made it</a>
+            <a class="btn btn--ghost" href="get-involved.html#submit">Suggest a place</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="modal" id="detail-modal" aria-labelledby="modal-title"></dialog>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-strip">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+  <rect width="48" height="48" rx="11" fill="#0b5d3b"/>
+  <rect x="3.5" y="3.5" width="41" height="41" rx="8" fill="none" stroke="#f4f7f4" stroke-width="2.2"/>
+  <path d="M15 35V24a6 6 0 0 1 6-6h9" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M27 12.5l6.5 5.5-6.5 5.5" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="33" cy="33" r="4" fill="#f5c242"/>
+</svg>
+        <span class="brand-name" translate="no">Cumming Connects</span>
+      </a>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="get-involved.html">Get involved</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="sources.html">Sources</a></li>
+        </ul>
+      </nav>
+      <p class="footer-help"><a href="tel:911">911</a> emergency <span aria-hidden="true">/</span> <a href="tel:988">988</a> crisis <span aria-hidden="true">/</span> <a href="tel:211">211</a> local help</p>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year>2026</span> Cumming Connects, an FBLA Website Design project by students in Forsyth County, Georgia.</p>
+      <p><a href="about.html#accessibility">Accessibility</a></p>
+    </div>
+  </footer>
+  <button type="button" class="icon-btn back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+  <!-- Colorblind mode: the shape key opens and closes whenever you want (Esc or a tap outside also closes it) -->
+  <button type="button" class="key-btn" popovertarget="shape-key" data-key-btn><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="3.5"/><path d="M17 3.5l4 7h-8z"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><path d="M17 13.5l3.5 3.5-3.5 3.5-3.5-3.5z"/></svg>Shape key</button>
+  <div id="shape-key" class="shape-key" popover role="dialog" aria-labelledby="shape-key-title">
+    <div class="shape-key-head">
+      <h2 id="shape-key-title">Shape key</h2>
+      <button type="button" class="icon-btn" popovertarget="shape-key" popovertargetaction="hide" aria-label="Close shape key"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <p>Each category has its own color and shape.</p>
+    <ul class="shape-key-list">
+      <li class="cat-food"><span class="key-shape" aria-hidden="true"></span><span><strong>Food &amp; basic needs</strong><span>Circle</span></span></li>
+      <li class="cat-health"><span class="key-shape" aria-hidden="true"></span><span><strong>Health &amp; wellness</strong><span>Cross</span></span></li>
+      <li class="cat-education"><span class="key-shape" aria-hidden="true"></span><span><strong>Education &amp; libraries</strong><span>Pentagon</span></span></li>
+      <li class="cat-youth"><span class="key-shape" aria-hidden="true"></span><span><strong>Youth &amp; family</strong><span>Triangle</span></span></li>
+      <li class="cat-seniors"><span class="key-shape" aria-hidden="true"></span><span><strong>Seniors</strong><span>Square</span></span></li>
+      <li class="cat-parks"><span class="key-shape" aria-hidden="true"></span><span><strong>Parks &amp; recreation</strong><span>Trapezoid</span></span></li>
+      <li class="cat-civic"><span class="key-shape" aria-hidden="true"></span><span><strong>Civic &amp; volunteering</strong><span>Diamond</span></span></li>
+      <li class="cat-safety"><span class="key-shape" aria-hidden="true"></span><span><strong>Safety &amp; emergency</strong><span>Octagon</span></span></li>
+    </ul>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/demo-captions.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

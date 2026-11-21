@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Security policy: run only this site's own scripts. If you edit the small inline script below, update its sha256 here (see README, Security). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-BlURFg5SOmyJ2iJKcYkG561/57DnQC32+NdRpanBz1c='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.tile.openstreetmap.org; font-src 'self'; media-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-src 'none'; worker-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>About | Cumming Connects</title>
+  <meta name="description" content="Why we built Cumming Connects, who it is for, how we designed it for every device and ability, and the metrics we use to measure success.">
+  <meta name="theme-color" content="#121a16">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="About | Cumming Connects">
+  <meta property="og:description" content="Why we built Cumming Connects, who it is for, how we designed it for every device and ability, and the metrics we use to measure success.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cumming Connects">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    /* Apply saved theme + text size before first paint (prevents a flash) */
+    (function () { try {
+      var t = JSON.parse(localStorage.getItem("cc:theme")); if (t) document.documentElement.dataset.theme = t;
+      var s = JSON.parse(localStorage.getItem("cc:textSize")); if (s) document.documentElement.dataset.text = s;
+      if (JSON.parse(localStorage.getItem("cc:cvd"))) document.documentElement.dataset.cvd = "on";
+    } catch (e) {} })();
+    /* Preload the two main fonts when served over the web (browsers refuse font preloads from file://) */
+    if (location.protocol.indexOf("http") === 0) ["atkinson-hyperlegible-latin-400-normal", "overpass-latin-800-normal"].forEach(function (f) {
+      var l = document.createElement("link"); l.rel = "preload"; l.as = "font"; l.type = "font/woff2"; l.crossOrigin = "anonymous";
+      l.href = "assets/fonts/" + f + ".woff2"; document.head.appendChild(l);
+    });
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="alert-strip" role="region" aria-label="Emergency numbers">
+    <div class="container">
+      <span><strong>Emergency?</strong> <span class="lbl-long">Call</span> <a href="tel:911">911</a></span>
+      <span><span class="lbl-long">Crisis support: call or text</span><span class="lbl-short">Crisis</span> <a href="tel:988">988</a></span>
+      <span><span class="lbl-long">Find local help: dial</span><span class="lbl-short">Local help</span> <a href="tel:211">211</a></span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+  <rect width="48" height="48" rx="11" fill="#0b5d3b"/>
+  <rect x="3.5" y="3.5" width="41" height="41" rx="8" fill="none" stroke="#f4f7f4" stroke-width="2.2"/>
+  <path d="M15 35V24a6 6 0 0 1 6-6h9" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M27 12.5l6.5 5.5-6.5 5.5" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="33" cy="33" r="4" fill="#f5c242"/>
+</svg>
+        <span class="brand-name"><span translate="no">Cumming Connects</span><span class="brand-tag">Forsyth County community resources</span></span>
+      </a>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="get-involved.html">Get involved</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+        </ul>
+        <div class="nav-extra"><button type="button" class="btn btn--ghost" data-text-toggle data-text-long>Text size: A</button></div>
+      </nav>
+      <div class="header-tools">
+        <button type="button" class="icon-btn listen-btn" data-listen aria-label="Listen to this page" title="Listen to this page">
+          <svg class="listen-icon-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4.7a.7.7 0 0 0-1.2-.5L6.4 7.6a1.4 1.4 0 0 1-1 .4H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.4a1.4 1.4 0 0 1 1 .4l3.4 3.4a.7.7 0 0 0 1.2-.5Z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.4 18.4a9 9 0 0 0 0-12.8"/></svg>
+          <svg class="listen-icon-stop" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          <span class="lbl-wide" data-listen-label>Listen</span>
+        </button>
+        <button type="button" class="icon-btn cvd-btn" data-cvd-toggle aria-pressed="false" aria-label="Colorblind mode" title="Colorblind mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="3.5"/><path d="M17 3.5l4 7h-8z"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><path d="M17 13.5l3.5 3.5-3.5 3.5-3.5-3.5z"/></svg>
+          <span class="lbl-wide">Colorblind</span>
+        </button>
+        <button type="button" class="icon-btn text-size-btn" data-text-toggle aria-label="Text size A"><span class="lbl-wide">Text size </span><span data-lvl>A</span></button>
+        <button type="button" class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Dark mode">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button type="button" class="icon-btn nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="page-hero">
+      <div class="container">
+        <div>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol><li><a href="index.html">Home</a></li><li><span aria-current="page">About</span></li></ol>
+        </nav>
+        <h1>About</h1>
+        <p>Who made this, and why.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section section--tight">
+      <div class="container grid grid--2" style="align-items:start">
+        <div>
+          <h2>The problem</h2>
+          <p class="lead">Forsyth County is one of Georgia&rsquo;s fastest-growing counties, but its help is spread across dozens of city, county, library, and nonprofit websites.</p>
+          <p>New residents don&rsquo;t know where to start. Seniors struggle with cluttered pages. Families who need help can&rsquo;t always tell what&rsquo;s still open. Cumming Connects puts resources and events in one consistent, accessible place. Anything we couldn&rsquo;t fully confirm is labeled.</p>
+        </div>
+        <div class="card">
+          <h2 class="h3-size">How to use it</h2>
+          <ol class="stack" style="padding-left:1.2rem;margin:0">
+            <li>Use the <strong>sign on the home page</strong> to say what you need.</li>
+            <li><strong>Search or filter</strong> the <a href="resources.html">directory</a> and the <a href="events.html">events calendar</a>.</li>
+            <li><strong>Star</strong> places to save them on this device.</li>
+            <li>Save events to <strong>My calendar</strong>, then add them all to your phone&rsquo;s calendar in one tap.</li>
+            <li>Use <strong>A / A+ / A++</strong> for bigger text and the moon for dark mode.</li>
+            <li>Tap the <strong>shapes button</strong> for Colorblind mode: colors that are easier to tell apart, and a shape for each category. The <strong>Shape key</strong> button in the bottom corner shows what each shape means.</li>
+            <li>Tap the <strong>speaker button</strong> to hear the page read out loud. To hear just one part, select that text first.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--surface" aria-labelledby="personas-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 id="personas-title">Who we designed for</h2>
+            <p>Four people, each of whom must reach what they need in three taps or fewer.</p>
+          </div>
+        </div>
+        <div class="table-wrap" role="region" aria-label="Personas and what we built for each" tabindex="0">
+          <table class="metric-table">
+            <caption class="visually-hidden">The four people we designed for</caption>
+            <thead><tr><th scope="col">Who</th><th scope="col">What they need</th><th scope="col">What we built for them</th></tr></thead>
+            <tbody>
+              <tr><td>A parent who just moved here</td><td>Schools, a library card, and weekend plans</td><td>The newcomer choice on the sign, and the calendar</td></tr>
+              <tr><td>A retiree with low vision</td><td>Senior center activities, without squinting</td><td>The text-size button, high contrast, and large buttons</td></tr>
+              <tr><td>A parent having a hard month</td><td>Food help, fast, on a phone during a lunch break</td><td>The sign, and one-tap calling and directions</td></tr>
+              <tr><td>A high school student</td><td>Volunteer hours and things to do with friends</td><td>The volunteer form and the events calendar</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="process-title">
+      <div class="container grid grid--2" style="align-items:start;gap:var(--space-7)">
+        <div>
+          <h2 id="process-title">How we built it</h2>
+          <ol class="steps mt-5">
+            <li><div><h3>Research</h3><p>We collected 40 places and 17 events, plus the monthly council meetings, from official and trusted sources. We saved every source link and flagged anything that needed a second check.</p></div></li>
+            <li><div><h3>Organize</h3><p>We sorted resources into eight need-based groups and planned a seven-page site where every page is one click away from any other.</p></div></li>
+            <li><div><h3>Version 1, then a hard look</h3><p>Our first design worked, but it looked like a template. We listed every generic choice and replaced each one with something specific to Cumming. You can see the change below.</p></div></li>
+            <li><div><h3>Design system</h3><p>We based the look on GA&nbsp;400&rsquo;s green guide signs, Sawnee granite, and Lake Lanier, then turned it into reusable color, type, and component rules.</p></div></li>
+            <li><div><h3>Build and test</h3><p>We ran the same automated accessibility, speed, and interaction tests on version 1 and version 2 at phone, tablet, and desktop sizes, then compared the results.</p></div></li>
+          </ol>
+        </div>
+        <div class="stack">
+          <h2>Why it looks like a road sign</h2>
+          <p>GA&nbsp;400 runs straight through Cumming, and people here find their way by its green signs. Our site&rsquo;s job is also wayfinding, so the home page starts with a sign that answers &ldquo;Where do I go for&hellip;?&rdquo; We kept the sign idea to that one spot so the rest of the site stays calm and easy to read.</p>
+          <div class="swatches" aria-label="Color palette">
+            <div class="swatch"><div style="background:#0b5d3b"></div><span><strong>Guide Green</strong><br>#0B5D3B</span></div>
+            <div class="swatch"><div style="background:#f5c242"></div><span><strong>Signal Yellow</strong><br>#F5C242</span></div>
+            <div class="swatch"><div style="background:#eceeea"></div><span><strong>Granite</strong><br>#ECEEEA</span></div>
+            <div class="swatch"><div style="background:#2b6f8f"></div><span><strong>Lanier Blue</strong><br>#2B6F8F</span></div>
+            <div class="swatch"><div style="background:#121a16;box-shadow:inset 0 0 0 1px #5d6e64"></div><span><strong>Ink</strong><br>#121A16</span></div>
+          </div>
+          <p><strong>Overpass</strong> is an open-source take on Highway Gothic, the lettering on U.S. road signs. We use it for headings, the sign, and numbers.</p>
+          <p>
+          <strong>Atkinson Hyperlegible</strong> was made by the Braille Institute so readers with low vision can tell similar letters apart. We use it for everything you read.</p>
+          <p>Category colors follow the U.S. road-sign color code: brown for recreation, blue for services, and red for safety. In Colorblind mode, each category also gets a road-sign shape, like the stop-sign octagon for safety and the school-sign pentagon for education.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-labelledby="compare-title">
+      <div class="container">
+        <h2 id="compare-title">Version 1 and version 2</h2>
+        <div class="compare mt-5">
+          <figure><img src="assets/img/about/v1-home.jpg" alt="Version 1 home page: a dark green banner, a serif headline with one italic word, a search bar, and a row of four statistic boxes" width="1200" height="750" loading="lazy"><figcaption>Version 1: a serif headline with one italic word, a stats row, and cards everywhere. It worked, but it could have been any town.</figcaption></figure>
+          <figure><img src="assets/img/about/v2-home.jpg" alt="Version 2 home page: a green road sign that reads I need food help for anyone, with three matching places below it" width="1200" height="750" loading="lazy"><figcaption>Version 2: a working road sign. Pick what you need, and the matching places appear under it.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--surface" id="accessibility" aria-labelledby="a11y-title">
+      <div class="container">
+        <h2 id="a11y-title">Accessibility: built to WCAG 2.2 AA</h2>
+        <p class="lead">According to the CDC, up to one in four U.S. adults has a disability. A community site has to work for all of them, so we tested it.</p>
+        <div class="table-wrap mt-5" role="region" aria-label="Accessibility test results" tabindex="0">
+          <table class="metric-table">
+            <caption class="visually-hidden">What we tested and the results</caption>
+            <thead><tr><th scope="col">What we checked</th><th scope="col">How</th><th scope="col">Result</th></tr></thead>
+            <tbody>
+              <tr><td>Automated accessibility rules</td><td>axe-core on all 7 pages, phone and desktop, light and dark</td><td>0 violations in 28 audits</td></tr>
+              <tr><td>Lighthouse accessibility score</td><td>Home, Resources, and Events, phone and desktop</td><td>100 on all 6 runs</td></tr>
+              <tr><td>Color blindness</td><td>Every category color, simulated for the three common types of color blindness</td><td>Colorblind mode: the two most alike colors are 17 times easier to tell apart than in the standard colors, and every category has its own shape, so color is never the only clue</td></tr>
+              <tr><td>Text contrast</td><td>Every text color against its background</td><td>Lowest is 4.8:1 (yellow on sign green); everything else is 6:1 or higher, measured in light and dark mode</td></tr>
+              <tr><td>Keyboard only</td><td>Tab through every page; Enter, Esc, and arrow keys</td><td>Every control reachable; pop-ups close with Esc and return focus</td></tr>
+              <tr><td>Tap size</td><td>Every button and link on a 375-pixel phone</td><td>Buttons, chips, and calendar days are 44 pixels or larger; every other link is at least 24 pixels (WCAG 2.2 AA)</td></tr>
+              <tr><td>Reduce motion</td><td>Turned on the system setting</td><td>Every animation stops</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-5">Found a barrier? Tell us with the <a href="get-involved.html#submit">suggestion form</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" id="metrics" aria-labelledby="metrics-title">
+      <div class="container">
+        <h2 id="metrics-title">How we measure success</h2>
+        <p class="lead">Every important action on the site sends a named event, ready for Google Analytics 4. Try it: use the site, then come back here.</p>
+        <h3 class="mt-6">Your visit, live</h3>
+        <p class="funnel-line mt-4" id="funnel" aria-live="polite">This visit so far: <span data-funnel="page_view" data-one="page viewed" data-many="pages viewed">0 pages viewed</span>, <span data-funnel="search" data-one="search" data-many="searches">0 searches</span>, <span data-funnel="view_resource" data-one="place opened" data-many="places opened">0 places opened</span>, and <span data-funnel="action" data-one="action" data-many="actions">0 actions</span> (calls, directions, saves, and calendar adds).</p>
+        <p class="small text-soft mt-4">These counts only exist in this browser tab and are never sent anywhere.</p>
+
+        <h3 class="mt-6">Targets</h3>
+        <div class="table-wrap mt-4" role="region" aria-label="Success metrics table" tabindex="0">
+          <table class="metric-table">
+            <caption class="visually-hidden">Website success metrics and targets</caption>
+            <thead><tr><th scope="col">Goal</th><th scope="col">Metric (KPI)</th><th scope="col">Target</th><th scope="col">How it&rsquo;s measured</th></tr></thead>
+            <tbody>
+              <tr><td>Fast on any connection</td><td>Core Web Vitals: Largest Contentful Paint (LCP), Interaction to Next Paint (INP), Cumulative Layout Shift (CLS)</td><td>LCP under 2.5 s, INP under 200 ms, CLS under 0.1</td><td>Lighthouse, PageSpeed Insights, Search Console</td></tr>
+              <tr><td>Accessible to all</td><td>Lighthouse accessibility score; axe violations</td><td>95 or higher; 0 critical</td><td>Automated audits plus keyboard and screen-reader checks</td></tr>
+              <tr><td>People find what they need</td><td>Search-to-click rate (searches or sign picks followed by opening a place)</td><td>Over 60%</td><td>GA4 events <code>search</code>, <code>sign_go</code>, <code>view_resource</code></td></tr>
+              <tr><td>Real-world action</td><td>Conversions: calls, directions, calendar adds</td><td>Up 10% each quarter</td><td><code>click_to_call</code>, <code>get_directions</code>, <code>add_to_calendar</code></td></tr>
+              <tr><td>Engaging content</td><td>Engagement rate; video plays</td><td>Over 55%; 1 in 5 home visitors play the video</td><td>GA4 engagement reports; <code>video_play</code></td></tr>
+              <tr><td>People come back</td><td>Returning-user rate; saved places</td><td>Over 30% returning</td><td>GA4 retention; <code>save_favorite</code></td></tr>
+              <tr><td>Community grows</td><td>Volunteer sign-ups and suggestions</td><td>25 or more per month</td><td><code>form_submit</code> completion rate</td></tr>
+              <tr><td>Easy to find on Google</td><td>Organic impressions and click-through rate (CTR)</td><td>CTR over 4%</td><td>Search Console, structured data for events</td></tr>
+              <tr><td>The directory has what people want</td><td>Zero-result search rate (searches that find nothing)</td><td>Under 5%; review the missed words every month</td><td>GA4 event <code>search_no_results</code></td></tr>
+              <tr><td>Listings stay current</td><td>Data freshness: days since each listing was checked</td><td>Every listing re-checked within 90 days</td><td>The &ldquo;Checked&rdquo; date in <code>js/data.js</code></td></tr>
+              <tr><td>People can finish key tasks</td><td>Task success rate in user tests (find food help, add an event, sign up)</td><td>90% or higher, with no task over 3 taps</td><td>Five-person tests each semester, covering all four personas</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 class="mt-6">Speed test results</h3>
+        <p>On November 11, 2026, we tested Home, Resources, and Events with Lighthouse, three times each, on a desktop and on a simulated phone over a slow 4G connection. The files were compressed, the way web hosts such as GitHub Pages serve them.</p>
+        <div class="table-wrap mt-4" role="region" aria-label="Speed test results" tabindex="0">
+          <table class="metric-table">
+            <caption class="visually-hidden">Lighthouse speed test results compared with our targets</caption>
+            <thead><tr><th scope="col">What we measured</th><th scope="col">Result</th><th scope="col">Target</th></tr></thead>
+            <tbody>
+              <tr><td>Lighthouse performance score</td><td>99 on phones, 100 on desktop</td><td>90 or higher</td></tr>
+              <tr><td>Lighthouse best practices score</td><td>100 on all 6 runs</td><td>90 or higher</td></tr>
+              <tr><td>Largest Contentful Paint (LCP): how fast the main content appears</td><td>2.0 s or less on a phone; 0.6 s or less on desktop</td><td>Under 2.5 s</td></tr>
+              <tr><td>Cumulative Layout Shift (CLS): how much the page jumps while loading</td><td>0.001 or less</td><td>Under 0.1</td></tr>
+              <tr><td>Total Blocking Time: how long the page is too busy to respond (the lab stand-in for INP)</td><td>40 ms or less</td><td>Under 200 ms</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-labelledby="upkeep-title">
+      <div class="container">
+        <h2 id="upkeep-title">Keeping it accurate</h2>
+        <div class="table-wrap mt-5" role="region" aria-label="Maintenance plan" tabindex="0">
+          <table class="metric-table">
+            <caption class="visually-hidden">How often we check and update the site</caption>
+            <thead><tr><th scope="col">How often</th><th scope="col">What we do</th></tr></thead>
+            <tbody>
+              <tr><td>Every week</td><td>Read new suggestions, call the organization, and add or fix the listing.</td></tr>
+              <tr><td>Every month</td><td>Add next month&rsquo;s events, review searches that found nothing, and check the metrics above.</td></tr>
+              <tr><td>Every 3 months</td><td>Re-check every listing&rsquo;s hours and phone number, then update the &ldquo;Checked&rdquo; date.</td></tr>
+              <tr><td>Every semester</td><td>Run five user tests that cover all four personas, and fix whatever slowed people down.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--surface" id="questions" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title">Common questions</h2>
+        <dl class="answers mt-5">
+          <div><dt>Does it cost anything?</dt><dd>No. It&rsquo;s free, and you never need an account.</dd></div>
+          <div><dt>How do you know it&rsquo;s right?</dt><dd>Each listing links to the page we checked it against. Anything we couldn&rsquo;t fully check says &ldquo;Call to confirm.&rdquo; Call before you go.</dd></div>
+          <div><dt>I need help right now.</dt><dd>Call <a href="tel:911">911</a> for an emergency, <a href="tel:988">988</a> for crisis support, or <a href="tel:211">211</a> for local help with food, housing, and bills.</dd></div>
+          <div><dt>Do you save my information?</dt><dd>No. Saved places and settings stay in your own browser. &ldquo;Near me&rdquo; never sends your location anywhere.</dd></div>
+          <div><dt>Something is missing or wrong.</dt><dd>Tell us with the <a href="get-involved.html#submit">suggestion form</a>. We check each one before adding it.</dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-strip">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+  <rect width="48" height="48" rx="11" fill="#0b5d3b"/>
+  <rect x="3.5" y="3.5" width="41" height="41" rx="8" fill="none" stroke="#f4f7f4" stroke-width="2.2"/>
+  <path d="M15 35V24a6 6 0 0 1 6-6h9" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M27 12.5l6.5 5.5-6.5 5.5" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="33" cy="33" r="4" fill="#f5c242"/>
+</svg>
+        <span class="brand-name" translate="no">Cumming Connects</span>
+      </a>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="get-involved.html">Get involved</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="sources.html">Sources</a></li>
+        </ul>
+      </nav>
+      <p class="footer-help"><a href="tel:911">911</a> emergency <span aria-hidden="true">/</span> <a href="tel:988">988</a> crisis <span aria-hidden="true">/</span> <a href="tel:211">211</a> local help</p>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year>2026</span> Cumming Connects, an FBLA Website Design project by students in Forsyth County, Georgia.</p>
+      <p><a href="about.html#accessibility">Accessibility</a></p>
+    </div>
+  </footer>
+  <button type="button" class="icon-btn back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+  <!-- Colorblind mode: the shape key opens and closes whenever you want (Esc or a tap outside also closes it) -->
+  <button type="button" class="key-btn" popovertarget="shape-key" data-key-btn><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="3.5"/><path d="M17 3.5l4 7h-8z"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><path d="M17 13.5l3.5 3.5-3.5 3.5-3.5-3.5z"/></svg>Shape key</button>
+  <div id="shape-key" class="shape-key" popover role="dialog" aria-labelledby="shape-key-title">
+    <div class="shape-key-head">
+      <h2 id="shape-key-title">Shape key</h2>
+      <button type="button" class="icon-btn" popovertarget="shape-key" popovertargetaction="hide" aria-label="Close shape key"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <p>Each category has its own color and shape.</p>
+    <ul class="shape-key-list">
+      <li class="cat-food"><span class="key-shape" aria-hidden="true"></span><span><strong>Food &amp; basic needs</strong><span>Circle</span></span></li>
+      <li class="cat-health"><span class="key-shape" aria-hidden="true"></span><span><strong>Health &amp; wellness</strong><span>Cross</span></span></li>
+      <li class="cat-education"><span class="key-shape" aria-hidden="true"></span><span><strong>Education &amp; libraries</strong><span>Pentagon</span></span></li>
+      <li class="cat-youth"><span class="key-shape" aria-hidden="true"></span><span><strong>Youth &amp; family</strong><span>Triangle</span></span></li>
+      <li class="cat-seniors"><span class="key-shape" aria-hidden="true"></span><span><strong>Seniors</strong><span>Square</span></span></li>
+      <li class="cat-parks"><span class="key-shape" aria-hidden="true"></span><span><strong>Parks &amp; recreation</strong><span>Trapezoid</span></span></li>
+      <li class="cat-civic"><span class="key-shape" aria-hidden="true"></span><span><strong>Civic &amp; volunteering</strong><span>Diamond</span></span></li>
+      <li class="cat-safety"><span class="key-shape" aria-hidden="true"></span><span><strong>Safety &amp; emergency</strong><span>Octagon</span></span></li>
+    </ul>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/about.js"></script>
+</body>
+</html>

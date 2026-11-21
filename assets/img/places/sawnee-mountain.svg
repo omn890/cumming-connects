@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="sm-t sm-d">
+<title id="sm-t">Sawnee Mountain Preserve</title>
+<desc id="sm-d">Two hikers climb a switchback trail up forested Sawnee Mountain toward the bare granite Indian Seats overlook as early-morning mist lifts from the valley.</desc>
+<defs>
+<linearGradient id="sm-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D7E8EE"/><stop offset="1" stop-color="#F9DA8A"/></linearGradient>
+<path id="sm-p" d="M0-54 16-22H9L20 0H-20L-9-22H-16Z"/>
+</defs>
+<rect width="800" height="560" fill="url(#sm-sky)"/>
+<path d="M0 292C80 272 150 252 230 264C300 274 340 242 420 238C520 234 600 264 680 252C740 244 770 234 800 238V560H0Z" fill="#A3C7D6"/>
+<path d="M0 312C140 296 260 306 400 296C540 286 680 300 800 290V310C680 320 540 308 400 318C260 330 120 322 0 334Z" fill="#ECEFEA" opacity=".8"/>
+<path d="M0 330C60 316 120 312 190 324C230 330 260 326 300 334V560H0Z" fill="#7FB0C6"/>
+<path d="M0 352C80 342 180 344 300 352V364C180 358 80 360 0 368Z" fill="#ECEFEA" opacity=".75"/>
+<path d="M0 372C70 356 140 360 220 374C260 381 290 380 320 386V560H0Z" fill="#2F7F5A"/>
+<path d="M16 392C60 384 120 384 170 392C120 398 60 398 16 392Z" fill="#5A9BB8"/>
+<path d="M0 412C60 402 140 404 230 418L260 430V560H0Z" fill="#12804F"/>
+<path d="M148 404 196 402 204 412 152 415Z" fill="#F8D57A"/>
+<path d="M54 424 112 420 122 432 60 437Z" fill="#F5C242"/>
+<path d="M126 426 166 424 176 434 132 437Z" fill="#2F7F5A"/>
+<g fill="#FFFFFF"><rect x="200" y="404" width="12" height="9"/><rect x="34" y="426" width="14" height="10"/></g>
+<g fill="#121A16"><path d="M198 405l8-7 8 7z"/><path d="M32 427l9-8 9 8z"/></g>
+<path d="M0 400C60 392 150 394 250 404V414C150 406 60 406 0 412Z" fill="#ECEFEA" opacity=".6"/>
+<path d="M90 560C150 470 230 400 300 330C340 290 360 250 380 220C400 190 420 160 440 130C456 106 470 84 488 76C502 70 516 78 530 98C570 160 640 240 720 288C750 304 780 312 800 316V560Z" fill="#0B5D3B"/>
+<path d="M488 76C502 70 516 78 530 98C570 160 640 240 720 288C750 304 780 312 800 316V560H610C590 420 550 260 498 110Z" fill="#084B30"/>
+<g fill="#073A25">
+<use href="#sm-p" x="470" y="104"/><use href="#sm-p" x="500" y="90"/><use href="#sm-p" x="526" y="120"/><use href="#sm-p" x="556" y="160"/><use href="#sm-p" x="590" y="200"/><use href="#sm-p" x="626" y="236"/><use href="#sm-p" x="664" y="270"/><use href="#sm-p" x="704" y="296"/><use href="#sm-p" x="750" y="318"/>
+<use href="#sm-p" x="600" y="290"/><use href="#sm-p" x="652" y="336"/><use href="#sm-p" x="720" y="372"/><use href="#sm-p" x="556" y="236"/><use href="#sm-p" x="690" y="440"/><use href="#sm-p" x="626" y="406"/><use href="#sm-p" x="764" y="410"/><use href="#sm-p" x="582" y="348"/>
+</g>
+<g fill="#12804F">
+<use href="#sm-p" x="486" y="200"/><use href="#sm-p" x="470" y="296"/><use href="#sm-p" x="520" y="262"/><use href="#sm-p" x="300" y="356"/><use href="#sm-p" x="246" y="414"/><use href="#sm-p" x="500" y="380"/><use href="#sm-p" x="530" y="446"/><use href="#sm-p" x="196" y="476"/><use href="#sm-p" x="394" y="470"/><use href="#sm-p" x="548" y="330"/><use href="#sm-p" x="254" y="506"/><use href="#sm-p" x="580" y="506"/><use href="#sm-p" x="484" y="156"/>
+</g>
+<path d="M300 560 470 494 296 452 432 412 324 374 422 338 364 302 424 276 410 252" fill="none" stroke="#C9D1CB" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M370 252 376 224 398 192 420 160 438 134 452 132 470 150 474 178 466 194 470 214 462 244 436 256 404 250Z" fill="#A9B4AC"/>
+<path d="M428 150H462L468 160H420ZM404 182H458L462 192H398ZM380 214H452L456 224H374Z" fill="#ECEFEA"/>
+<path d="M420 160H468L458 182H414ZM398 192H462L452 214H388ZM374 224H456L446 244 430 252 402 246 372 250Z" fill="#C9D1CB"/>
+<path d="M438 134 452 132 462 150H428Z" fill="#ECEFEA"/>
+<g transform="translate(372 391)" stroke="#073A25" stroke-width="1.5">
+<path d="M-9-19-14 0" stroke="#121A16"/>
+<rect x="-5" y="-12" width="4" height="12" rx="2" fill="#121A16" transform="rotate(12 -3 -12)"/><rect x="1" y="-12" width="4" height="12" rx="2" fill="#121A16" transform="rotate(-8 3 -12)"/>
+<rect x="3" y="-29" width="9" height="14" rx="3" fill="#ECEFEA"/>
+<rect x="-7" y="-30" width="14" height="20" rx="6" fill="#F5C242"/><circle cy="-36" r="6.5" fill="#8D5524"/>
+</g>
+<g transform="translate(404 402) rotate(-7)" stroke="#073A25" stroke-width="1.5">
+<rect x="-5" y="-15" width="4" height="15" rx="2" fill="#121A16" transform="rotate(-10 -3 -15)"/><rect x="1" y="-15" width="4" height="15" rx="2" fill="#121A16" transform="rotate(10 3 -15)"/>
+<rect x="3" y="-33" width="10" height="16" rx="3" fill="#F5C242"/>
+<rect x="-7" y="-34" width="14" height="22" rx="6" fill="#2B6F8F"/><circle cy="-40" r="6.5" fill="#F1C27D"/>
+</g>
+<path d="M0 492C140 480 300 494 460 484C600 476 720 488 800 480V506C700 512 580 500 440 510C300 520 140 506 0 516Z" fill="#ECEFEA" opacity=".55"/>
+<path d="M0 520C60 500 120 512 180 504C260 494 320 520 400 512C480 504 560 520 640 506C700 498 760 508 800 500V560H0Z" fill="#073A25"/>
+<g fill="#073A25">
+<use href="#sm-p" transform="translate(30 540) scale(2)"/><use href="#sm-p" transform="translate(84 548) scale(1.6)"/><use href="#sm-p" transform="translate(140 544) scale(2.3)"/><use href="#sm-p" transform="translate(660 546) scale(2.1)"/><use href="#sm-p" transform="translate(716 540) scale(2.6)"/><use href="#sm-p" transform="translate(776 548) scale(1.8)"/>
+</g>
+</svg>

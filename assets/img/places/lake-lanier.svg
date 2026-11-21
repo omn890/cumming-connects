@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="ll-t ll-d">
+<title id="ll-t">Mary Alice Park on Lake Lanier</title>
+<desc id="ll-d">A pontoon boat waits at a dock off a red-clay bank while swimmers enjoy the sandy beach and buoy line below a pine-lined far shore.</desc>
+<defs>
+<linearGradient id="ll-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9CCDB"/><stop offset="1" stop-color="#E6F1F4"/></linearGradient>
+<linearGradient id="ll-w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FB0C6"/><stop offset="1" stop-color="#2B6F8F"/></linearGradient>
+<path id="ll-p" d="M0-44 13-18H7L16 0H-16L-7-18H-13Z"/>
+</defs>
+<rect width="800" height="560" fill="url(#ll-sky)"/>
+<circle cx="604" cy="92" r="32" fill="#F5C242"/>
+<path d="M0 226C120 206 220 216 320 206C430 196 520 214 640 202C720 194 770 202 800 198V270H0Z" fill="#A3C7D6"/>
+<path d="M0 268V246C100 236 200 240 300 244C420 248 520 232 640 226C720 224 770 228 800 230V268Z" fill="#073A25"/>
+<g fill="#073A25">
+<use href="#ll-p" x="14" y="250"/><use href="#ll-p" transform="translate(48 248) scale(1.2)"/><use href="#ll-p" x="92" y="244"/><use href="#ll-p" x="150" y="246"/><use href="#ll-p" transform="translate(200 250) scale(.8)"/><use href="#ll-p" x="262" y="250"/><use href="#ll-p" transform="translate(334 252) scale(.85)"/><use href="#ll-p" x="410" y="252"/><use href="#ll-p" x="476" y="244"/><use href="#ll-p" transform="translate(540 240) scale(1.15)"/><use href="#ll-p" x="596" y="236"/><use href="#ll-p" transform="translate(640 236) scale(1.3)"/><use href="#ll-p" x="690" y="234"/><use href="#ll-p" transform="translate(742 238) scale(1.2)"/><use href="#ll-p" x="784" y="238"/>
+</g>
+<g fill="#0B5D3B">
+<use href="#ll-p" transform="translate(62 262) scale(.9)"/><use href="#ll-p" x="120" y="264"/><use href="#ll-p" x="228" y="264"/><use href="#ll-p" x="296" y="262"/><use href="#ll-p" transform="translate(370 264) scale(.75)"/><use href="#ll-p" x="444" y="262"/><use href="#ll-p" x="520" y="264"/><use href="#ll-p" transform="translate(594 262) scale(1.2)"/><use href="#ll-p" x="664" y="264"/><use href="#ll-p" x="736" y="262"/>
+</g>
+<rect y="262" width="800" height="298" fill="url(#ll-w)"/>
+<path d="M0 262H160L150 268H0ZM330 262H520L510 267H340ZM640 262H800V268H650Z" fill="#A9472B"/>
+<g fill="#D7E8EE" opacity=".7">
+<rect x="250" y="290" width="60" height="3" rx="1.5"/><rect x="400" y="300" width="44" height="3" rx="1.5"/><rect x="560" y="286" width="54" height="3" rx="1.5"/><rect x="320" y="336" width="70" height="3" rx="1.5"/><rect x="40" y="320" width="50" height="3" rx="1.5"/><rect x="220" y="372" width="60" height="3" rx="1.5"/><rect x="420" y="452" width="80" height="3" rx="1.5"/><rect x="560" y="500" width="60" height="3" rx="1.5"/>
+</g>
+<g transform="translate(206 300)">
+<path d="M-26 0H26L18 9H-18Z" fill="#FFFFFF"/>
+<path d="M1-58V-3H34Z" fill="#FFFFFF"/><path d="M-3-50V-3H-28Z" fill="#ECEFEA"/>
+<rect x="-1" y="-60" width="2" height="60" fill="#121A16"/>
+</g>
+<g transform="translate(420 42)">
+<rect x="2" y="404" width="156" height="12" rx="6" fill="#C9D1CB"/>
+<rect x="0" y="390" width="162" height="14" rx="3" fill="#FFFFFF"/>
+<rect x="6" y="374" width="150" height="16" rx="2" fill="#2B6F8F"/>
+<rect x="6" y="374" width="150" height="4" fill="#5A9BB8"/>
+<g fill="#121A16"><rect x="28" y="340" width="2" height="34"/><rect x="128" y="340" width="2" height="34"/></g>
+<rect x="18" y="334" width="124" height="9" rx="4.5" fill="#F5C242"/>
+<g stroke="#073A25" stroke-width="1.5"><rect x="74" y="350" width="16" height="24" rx="6" fill="#FFFFFF"/><circle cx="82" cy="342" r="7" fill="#C68642"/>
+<rect x="106" y="360" width="14" height="14" rx="6" fill="#F5C242"/><circle cx="113" cy="353" r="6" fill="#5C3A21"/></g>
+</g>
+<rect x="424" y="486" width="240" height="6" rx="3" fill="#245E79"/>
+<g fill="#121A16"><rect x="440" y="466" width="5" height="22"/><rect x="500" y="466" width="5" height="22"/><rect x="560" y="466" width="5" height="22"/><rect x="620" y="466" width="5" height="22"/></g>
+<rect x="430" y="452" width="236" height="10" fill="#ECEFEA"/>
+<rect x="430" y="462" width="236" height="5" fill="#C9D1CB"/>
+<path d="M560 560C576 528 604 496 640 476C690 456 750 446 800 442V560Z" fill="#A9472B"/>
+<path d="M590 560C604 530 630 506 660 494C710 478 760 472 800 470V560Z" fill="#8A3A22"/>
+<path d="M640 476C690 456 750 446 800 442V458C750 462 700 470 660 486Z" fill="#0B5D3B"/>
+<rect x="636" y="452" width="34" height="15" fill="#C9D1CB"/>
+<g fill="#073A25"><use href="#ll-p" transform="translate(712 462) scale(2.1)"/><use href="#ll-p" transform="translate(764 454) scale(2.7)"/><use href="#ll-p" transform="translate(806 452) scale(2)"/></g>
+<path d="M30 404C70 388 140 384 200 394C250 402 300 420 330 444" fill="none" stroke="#ECEFEA" stroke-width="2"/>
+<g fill="#FFFFFF"><rect x="586" y="278" width="30" height="3" rx="1.5"/><rect x="618" y="290" width="16" height="3" rx="1.5"/><rect x="572" y="300" width="20" height="3" rx="1.5"/><rect x="600" y="312" width="36" height="3" rx="1.5"/><rect x="584" y="326" width="14" height="3" rx="1.5"/><rect x="612" y="338" width="22" height="3" rx="1.5"/></g>
+<g fill="#F5C242"><circle cx="54" cy="396" r="5"/><circle cx="98" cy="388" r="5"/><circle cx="146" cy="387" r="5"/><circle cx="196" cy="393" r="5"/><circle cx="246" cy="403" r="5"/><circle cx="292" cy="420" r="5"/></g>
+<g fill="#FFFFFF" opacity=".8"><rect x="104" y="424" width="26" height="3" rx="1.5"/><rect x="176" y="440" width="26" height="3" rx="1.5"/></g>
+<g stroke="#073A25" stroke-width="1.5"><path d="M124 418 130 404" stroke-width="5" stroke-linecap="round" stroke="#8D5524"/><circle cx="117" cy="418" r="7" fill="#8D5524"/><circle cx="189" cy="434" r="6" fill="#F1C27D"/></g>
+<path d="M0 452C120 460 230 486 320 524C344 536 362 548 372 560H0Z" fill="#D9AC3E"/>
+<path d="M0 462C120 470 230 494 312 532C334 543 350 552 358 560H0Z" fill="#F8D98B"/>
+<g transform="translate(110 506)">
+<rect x="-1.5" y="-56" width="3" height="58" fill="#121A16"/>
+<path d="M-40-50C-30-72 30-72 40-50Z" fill="#F5C242"/>
+<path d="M-14-50C-12-68 12-68 14-50Z" fill="#FFFFFF"/>
+</g>
+<rect x="132" y="504" width="64" height="20" rx="3" fill="#2B6F8F"/>
+<rect x="132" y="510" width="64" height="5" fill="#FFFFFF"/>
+<g transform="translate(176 514)" stroke="#073A25" stroke-width="1.5"><rect x="-12" y="-3" width="16" height="6" rx="3" fill="#5A9BB8"/><rect x="-7" y="-20" width="13" height="18" rx="6" fill="#F5C242"/><circle cy="-26" r="6" fill="#5C3A21"/></g>
+<g transform="translate(240 522)" stroke="#073A25" stroke-width="1.5">
+<rect x="-5" y="-15" width="4" height="15" rx="2" fill="#121A16"/><rect x="1" y="-15" width="4" height="15" rx="2" fill="#121A16"/>
+<rect x="5" y="-46" width="4" height="18" rx="2" fill="#E0AC69" transform="rotate(20 7 -30)"/>
+<rect x="-8" y="-36" width="16" height="23" rx="7" fill="#0B5D3B"/><circle cy="-43" r="7" fill="#E0AC69"/>
+</g>
+</svg>

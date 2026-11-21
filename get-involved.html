@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Security policy: run only this site's own scripts. If you edit the small inline script below, update its sha256 here (see README, Security). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-BlURFg5SOmyJ2iJKcYkG561/57DnQC32+NdRpanBz1c='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.tile.openstreetmap.org; font-src 'self'; media-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-src 'none'; worker-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Get involved | Cumming Connects</title>
+  <meta name="description" content="Volunteer with local organizations in Cumming and Forsyth County, GA, or suggest a community resource to add to Cumming Connects.">
+  <meta name="theme-color" content="#121a16">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Get involved | Cumming Connects">
+  <meta property="og:description" content="Volunteer with local organizations in Cumming and Forsyth County, GA, or suggest a community resource to add to Cumming Connects.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cumming Connects">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    /* Apply saved theme + text size before first paint (prevents a flash) */
+    (function () { try {
+      var t = JSON.parse(localStorage.getItem("cc:theme")); if (t) document.documentElement.dataset.theme = t;
+      var s = JSON.parse(localStorage.getItem("cc:textSize")); if (s) document.documentElement.dataset.text = s;
+      if (JSON.parse(localStorage.getItem("cc:cvd"))) document.documentElement.dataset.cvd = "on";
+    } catch (e) {} })();
+    /* Preload the two main fonts when served over the web (browsers refuse font preloads from file://) */
+    if (location.protocol.indexOf("http") === 0) ["atkinson-hyperlegible-latin-400-normal", "overpass-latin-800-normal"].forEach(function (f) {
+      var l = document.createElement("link"); l.rel = "preload"; l.as = "font"; l.type = "font/woff2"; l.crossOrigin = "anonymous";
+      l.href = "assets/fonts/" + f + ".woff2"; document.head.appendChild(l);
+    });
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="alert-strip" role="region" aria-label="Emergency numbers">
+    <div class="container">
+      <span><strong>Emergency?</strong> <span class="lbl-long">Call</span> <a href="tel:911">911</a></span>
+      <span><span class="lbl-long">Crisis support: call or text</span><span class="lbl-short">Crisis</span> <a href="tel:988">988</a></span>
+      <span><span class="lbl-long">Find local help: dial</span><span class="lbl-short">Local help</span> <a href="tel:211">211</a></span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+  <rect width="48" height="48" rx="11" fill="#0b5d3b"/>
+  <rect x="3.5" y="3.5" width="41" height="41" rx="8" fill="none" stroke="#f4f7f4" stroke-width="2.2"/>
+  <path d="M15 35V24a6 6 0 0 1 6-6h9" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M27 12.5l6.5 5.5-6.5 5.5" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="33" cy="33" r="4" fill="#f5c242"/>
+</svg>
+        <span class="brand-name"><span translate="no">Cumming Connects</span><span class="brand-tag">Forsyth County community resources</span></span>
+      </a>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="get-involved.html" aria-current="page">Get involved</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-extra"><button type="button" class="btn btn--ghost" data-text-toggle data-text-long>Text size: A</button></div>
+      </nav>
+      <div class="header-tools">
+        <button type="button" class="icon-btn listen-btn" data-listen aria-label="Listen to this page" title="Listen to this page">
+          <svg class="listen-icon-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4.7a.7.7 0 0 0-1.2-.5L6.4 7.6a1.4 1.4 0 0 1-1 .4H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.4a1.4 1.4 0 0 1 1 .4l3.4 3.4a.7.7 0 0 0 1.2-.5Z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.4 18.4a9 9 0 0 0 0-12.8"/></svg>
+          <svg class="listen-icon-stop" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          <span class="lbl-wide" data-listen-label>Listen</span>
+        </button>
+        <button type="button" class="icon-btn cvd-btn" data-cvd-toggle aria-pressed="false" aria-label="Colorblind mode" title="Colorblind mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="3.5"/><path d="M17 3.5l4 7h-8z"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><path d="M17 13.5l3.5 3.5-3.5 3.5-3.5-3.5z"/></svg>
+          <span class="lbl-wide">Colorblind</span>
+        </button>
+        <button type="button" class="icon-btn text-size-btn" data-text-toggle aria-label="Text size A"><span class="lbl-wide">Text size </span><span data-lvl>A</span></button>
+        <button type="button" class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Dark mode">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button type="button" class="icon-btn nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="page-hero">
+      <div class="container">
+        <div>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol><li><a href="index.html">Home</a></li><li><span aria-current="page">Get involved</span></li></ol>
+        </nav>
+        <h1>Get involved</h1>
+        <p>Help out, or tell us about a place we missed.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section section--tight">
+      <div class="container" style="max-width:860px">
+        <div class="tabs" role="tablist" aria-label="Ways to get involved">
+          <button type="button" class="tab" role="tab" id="tab-volunteer" aria-controls="volunteer" aria-selected="true">Volunteer sign-up</button>
+          <button type="button" class="tab" role="tab" id="tab-submit" aria-controls="submit" aria-selected="false" tabindex="-1">Suggest a resource</button>
+        </div>
+
+        <!-- Volunteer -->
+        <div class="card form-card" role="tabpanel" id="volunteer" aria-labelledby="tab-volunteer" tabindex="0">
+          <h2>Volunteer with a local organization</h2>
+          <p class="text-soft">Tell us what you enjoy and when you&rsquo;re free. When this site goes live, we&rsquo;ll pass sign-ups to local groups that need help. Students can earn service hours, too.</p>
+          <p class="form-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            <span>This is a demonstration form for a student project. Your information stays in your browser and is not sent or stored anywhere.</span>
+          </p>
+          <form id="volunteer-form" novalidate>
+            <p class="hint required-note">Fields marked <span class="req">*</span> are required.</p>
+            <div class="form-grid">
+              <div class="field">
+                <label for="v-first">First name <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="v-first" name="first" autocomplete="given-name" required aria-describedby="v-first-err">
+                <p class="error-msg" id="v-first-err">Please enter your first name.</p>
+              </div>
+              <div class="field">
+                <label for="v-last">Last name <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="v-last" name="last" autocomplete="family-name" required aria-describedby="v-last-err">
+                <p class="error-msg" id="v-last-err">Please enter your last name.</p>
+              </div>
+              <div class="field">
+                <label for="v-email">Email <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="v-email" name="email" type="email" autocomplete="email" spellcheck="false" required aria-describedby="v-email-err">
+                <p class="error-msg" id="v-email-err">Please enter a valid email, such as name@example.com.</p>
+              </div>
+              <div class="field">
+                <label for="v-phone">Phone <span class="text-soft">(optional)</span></label>
+                <input class="input" id="v-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="v-phone-hint v-phone-err">
+                <p class="hint" id="v-phone-hint">Format: (770) 555-0123</p>
+                <p class="error-msg" id="v-phone-err">Please enter a 10-digit phone number.</p>
+              </div>
+              <div class="field">
+                <label for="v-age">Age group <span class="req" aria-hidden="true">*</span></label>
+                <select id="v-age" name="age" required aria-describedby="v-age-err">
+                  <option value="">Choose one</option>
+                  <option>Under 14 (with a parent or guardian)</option>
+                  <option>14 to 17</option>
+                  <option>18 to 24</option>
+                  <option>25 to 54</option>
+                  <option>55 or older</option>
+                </select>
+                <p class="error-msg" id="v-age-err">Please choose your age group.</p>
+              </div>
+              <div class="field">
+                <label for="v-avail">Availability <span class="req" aria-hidden="true">*</span></label>
+                <select id="v-avail" name="availability" required aria-describedby="v-avail-err">
+                  <option value="">Choose one</option>
+                  <option>Weekday mornings</option>
+                  <option>Weekday afternoons</option>
+                  <option>Weekday evenings</option>
+                  <option>Weekends</option>
+                  <option>Flexible</option>
+                </select>
+                <p class="error-msg" id="v-avail-err">Please choose when you are available.</p>
+              </div>
+              <fieldset class="field full" aria-describedby="v-interests-err">
+                <legend>Areas of interest <span class="req" aria-hidden="true">*</span> <span class="text-soft" style="font-weight:400">(choose at least one)</span></legend>
+                <div class="check-group" id="v-interests">
+                  <label class="check-pill"><input type="checkbox" name="interests" value="food" id="v-int-food"><span>Food drives &amp; pantries</span></label>
+                  <label class="check-pill"><input type="checkbox" name="interests" value="youth" id="v-int-youth"><span>Tutoring &amp; youth</span></label>
+                  <label class="check-pill"><input type="checkbox" name="interests" value="seniors" id="v-int-seniors"><span>Seniors</span></label>
+                  <label class="check-pill"><input type="checkbox" name="interests" value="parks" id="v-int-parks"><span>Parks &amp; cleanups</span></label>
+                  <label class="check-pill"><input type="checkbox" name="interests" value="events" id="v-int-events"><span>Community events</span></label>
+                  <label class="check-pill"><input type="checkbox" name="interests" value="animals" id="v-int-animals"><span>Animal shelter</span></label>
+                </div>
+                <p class="error-msg" id="v-interests-err">Please choose at least one area of interest.</p>
+              </fieldset>
+              <div class="field full">
+                <label for="v-msg">Anything else we should know? <span class="text-soft">(optional)</span></label>
+                <textarea id="v-msg" name="message" maxlength="400" data-counter="v-msg-count"></textarea>
+                <p class="char-count" id="v-msg-count">0 / 400</p>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <button class="btn btn--primary" type="submit">Sign me up</button>
+            </div>
+          </form>
+          <div class="form-success" role="status" tabindex="-1">
+            <svg viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><circle cx="26" cy="26" r="24"/><path class="check-path" d="M15 27l7 7 15-15"/></svg>
+            <h2>Thanks, <span data-name>there</span>.</h2>
+            <p>This was a demo, so nothing was sent. When the site goes live, a volunteer coordinator will email you within three business days.</p>
+            <button type="button" class="btn btn--ghost" data-again>Submit another response</button>
+          </div>
+        </div>
+
+        <!-- Suggest a resource -->
+        <div class="card form-card" role="tabpanel" id="submit" aria-labelledby="tab-submit" tabindex="0" hidden>
+          <h2>Suggest a community resource</h2>
+          <p class="text-soft">Know a program, service, or organization that belongs here? Send it in, and we&rsquo;ll call the organization to check it before it goes up.</p>
+          <p class="form-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            <span>This is a demonstration form for a student project. Your information stays in your browser and is not sent or stored anywhere.</span>
+          </p>
+          <form id="submit-form" novalidate>
+            <p class="hint required-note">Fields marked <span class="req">*</span> are required.</p>
+            <div class="form-grid">
+              <div class="field full">
+                <label for="s-org">Organization or program name <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="s-org" name="org" required minlength="3" aria-describedby="s-org-err">
+                <p class="error-msg" id="s-org-err">Please enter the name (at least 3 characters).</p>
+              </div>
+              <div class="field">
+                <label for="s-cat">Category <span class="req" aria-hidden="true">*</span></label>
+                <select id="s-cat" name="category" required aria-describedby="s-cat-err">
+                  <option value="">Choose a category</option>
+                  <option value="food">Food &amp; basic needs</option>
+                  <option value="health">Health &amp; wellness</option>
+                  <option value="education">Education &amp; libraries</option>
+                  <option value="youth">Youth &amp; family</option>
+                  <option value="seniors">Seniors</option>
+                  <option value="parks">Parks &amp; recreation</option>
+                  <option value="civic">Civic &amp; volunteering</option>
+                  <option value="safety">Safety &amp; emergency</option>
+                </select>
+                <p class="error-msg" id="s-cat-err">Please choose a category.</p>
+              </div>
+              <div class="field">
+                <label for="s-web">Website <span class="text-soft">(optional)</span></label>
+                <input class="input" id="s-web" name="website" type="url" placeholder="https://example.org" aria-describedby="s-web-err">
+                <p class="error-msg" id="s-web-err">Please enter a full web address, such as https://example.org.</p>
+              </div>
+              <div class="field full">
+                <label for="s-addr">Address <span class="text-soft">(optional)</span></label>
+                <input class="input" id="s-addr" name="address" autocomplete="street-address" placeholder="Street, City, GA ZIP">
+              </div>
+              <div class="field full">
+                <label for="s-desc">What does it offer? <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="s-desc" name="description" required minlength="20" maxlength="500" data-counter="s-desc-count" aria-describedby="s-desc-err s-desc-count"></textarea>
+                <p class="char-count" id="s-desc-count">0 / 500</p>
+                <p class="error-msg" id="s-desc-err">Please describe the resource in at least 20 characters.</p>
+              </div>
+              <div class="field">
+                <label for="s-name">Your name <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="s-name" name="name" autocomplete="name" required aria-describedby="s-name-err">
+                <p class="error-msg" id="s-name-err">Please enter your name.</p>
+              </div>
+              <div class="field">
+                <label for="s-email">Your email <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="s-email" name="email" type="email" autocomplete="email" spellcheck="false" required aria-describedby="s-email-err">
+                <p class="error-msg" id="s-email-err">Please enter a valid email, such as name@example.com.</p>
+              </div>
+              <div class="field full">
+                <label class="row" style="gap:.6rem;font-weight:400;align-items:start">
+                  <input type="checkbox" id="s-consent" name="consent" required style="width:22px;height:22px;margin-top:3px" aria-describedby="s-consent-err">
+                  <span>I confirm this information is accurate to the best of my knowledge. <span class="req" aria-hidden="true">*</span></span>
+                </label>
+                <p class="error-msg" id="s-consent-err">Please confirm before submitting.</p>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <button class="btn btn--primary" type="submit">Submit suggestion</button>
+            </div>
+          </form>
+          <div class="form-success" role="status" tabindex="-1">
+            <svg viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><circle cx="26" cy="26" r="24"/><path class="check-path" d="M15 27l7 7 15-15"/></svg>
+            <h2>Thanks for the tip, <span data-name>there</span>.</h2>
+            <p style="margin-inline:auto">This was a demo, so nothing was sent. When the site goes live, we&rsquo;ll call to check <strong data-org>this resource</strong> before we add it to the directory.</p>
+            <button type="button" class="btn btn--ghost" data-again>Suggest another resource</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-strip">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+  <rect width="48" height="48" rx="11" fill="#0b5d3b"/>
+  <rect x="3.5" y="3.5" width="41" height="41" rx="8" fill="none" stroke="#f4f7f4" stroke-width="2.2"/>
+  <path d="M15 35V24a6 6 0 0 1 6-6h9" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M27 12.5l6.5 5.5-6.5 5.5" fill="none" stroke="#f4f7f4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="33" cy="33" r="4" fill="#f5c242"/>
+</svg>
+        <span class="brand-name" translate="no">Cumming Connects</span>
+      </a>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="get-involved.html">Get involved</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="sources.html">Sources</a></li>
+        </ul>
+      </nav>
+      <p class="footer-help"><a href="tel:911">911</a> emergency <span aria-hidden="true">/</span> <a href="tel:988">988</a> crisis <span aria-hidden="true">/</span> <a href="tel:211">211</a> local help</p>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year>2026</span> Cumming Connects, an FBLA Website Design project by students in Forsyth County, Georgia.</p>
+      <p><a href="about.html#accessibility">Accessibility</a></p>
+    </div>
+  </footer>
+  <button type="button" class="icon-btn back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+  <!-- Colorblind mode: the shape key opens and closes whenever you want (Esc or a tap outside also closes it) -->
+  <button type="button" class="key-btn" popovertarget="shape-key" data-key-btn><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="3.5"/><path d="M17 3.5l4 7h-8z"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><path d="M17 13.5l3.5 3.5-3.5 3.5-3.5-3.5z"/></svg>Shape key</button>
+  <div id="shape-key" class="shape-key" popover role="dialog" aria-labelledby="shape-key-title">
+    <div class="shape-key-head">
+      <h2 id="shape-key-title">Shape key</h2>
+      <button type="button" class="icon-btn" popovertarget="shape-key" popovertargetaction="hide" aria-label="Close shape key"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <p>Each category has its own color and shape.</p>
+    <ul class="shape-key-list">
+      <li class="cat-food"><span class="key-shape" aria-hidden="true"></span><span><strong>Food &amp; basic needs</strong><span>Circle</span></span></li>
+      <li class="cat-health"><span class="key-shape" aria-hidden="true"></span><span><strong>Health &amp; wellness</strong><span>Cross</span></span></li>
+      <li class="cat-education"><span class="key-shape" aria-hidden="true"></span><span><strong>Education &amp; libraries</strong><span>Pentagon</span></span></li>
+      <li class="cat-youth"><span class="key-shape" aria-hidden="true"></span><span><strong>Youth &amp; family</strong><span>Triangle</span></span></li>
+      <li class="cat-seniors"><span class="key-shape" aria-hidden="true"></span><span><strong>Seniors</strong><span>Square</span></span></li>
+      <li class="cat-parks"><span class="key-shape" aria-hidden="true"></span><span><strong>Parks &amp; recreation</strong><span>Trapezoid</span></span></li>
+      <li class="cat-civic"><span class="key-shape" aria-hidden="true"></span><span><strong>Civic &amp; volunteering</strong><span>Diamond</span></span></li>
+      <li class="cat-safety"><span class="key-shape" aria-hidden="true"></span><span><strong>Safety &amp; emergency</strong><span>Octagon</span></span></li>
+    </ul>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>
